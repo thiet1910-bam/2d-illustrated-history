@@ -1,0 +1,572 @@
+{
+  "episode_id": "EP01_Iran",
+  "act_id": "HỒI I",
+  "cluster_id": "cum_01_Hoi_I",
+  "cluster_type": "HOI_PHAN_TICH",
+  "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau | Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại | Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+  "bgm_track": "bgm_tense_history.wav",
+  "total_duration_sec": 102.786735,
+  "beats": [
+    {
+      "beat_id": "beat_01",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_01.wav",
+      "source_mp3_t0": 0.0,
+      "source_mp3_t1": 2.032,
+      "t0": 0.0,
+      "t1": 2.031746,
+      "duration": 2.031746,
+      "narration_text": "Hãy nhìn vào hai bức ảnh này.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T01_Split_World_Contrast",
+      "hud_banner": {
+        "text": "Hãy nhìn vào 2 bức ảnh này...",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.05,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 210, "y": 725, "scale": 1.02, "emotion": "explaining", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        { "bt": 0.25, "action_type": "MYSTERY_FRAMES_2", "label": "?" }
+      ],
+      "sfx_events": [
+        { "bt": 0.25, "sfx_file": "whoosh_transition.wav", "gain_db": -6.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_02",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_02.wav",
+      "source_mp3_t0": 2.032,
+      "source_mp3_t1": 12.237,
+      "t0": 2.031746,
+      "t1": 12.236961,
+      "duration": 10.205215,
+      "narration_text": "Bên trái: Phụ nữ mặc váy ngắn, tóc xõa ngang vai, bước đi dưới nắng vàng giữa những rạp chiếu phim và quán cà phê mở. Trông giống như Paris hay Los Angeles.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T04_Empire_Parade",
+      "hud_banner": {
+        "text": "BÊN TRÁI: TEHRAN THẬP NIÊN 1970",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.06,
+        "pan_x_start": -40,
+        "pan_x_end": 20,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 205, "y": 725, "scale": 1.0, "emotion": "explaining", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.45,
+          "action_type": "PHOTO_CARD_LEFT",
+          "label": "Tehran, 1970",
+          "sub_label": "\"Váy ngắn • Tóc xõa • Nắng vàng\"",
+          "photo_file": "cum_01_Hoi_I/01_beat02_0007s-0018s_tehran_1970_shops.jpg"
+        },
+        {
+          "bt": 3.80,
+          "action_type": "PHOTO_CARD_TOP_RIGHT",
+          "label": "Đại lộ Tehran, 1970",
+          "sub_label": "",
+          "photo_file": "cum_01_Hoi_I/02_beat02_0010s-0018s_tehran_1970_boulevard.jpg"
+        },
+        {
+          "bt": 5.30,
+          "action_type": "CINEMA_CAFE_PILLS",
+          "label": "Rạp chiếu phim",
+          "sub_label": "Quán cà phê mở"
+        },
+        {
+          "bt": 7.90,
+          "action_type": "PARIS_LA_STAMPS",
+          "label": "✓ Giống Paris?",
+          "sub_label": "✓ Hay Los Angeles?"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.45, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 3.80, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 7.90, "sfx_file": "stamp_slam.wav", "gain_db": -6.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_03",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_03.wav",
+      "source_mp3_t0": 12.237,
+      "source_mp3_t1": 22.127,
+      "t0": 12.236961,
+      "t1": 22.127029,
+      "duration": 9.890068,
+      "narration_text": "Bên phải: Một biển đen kịt những tấm vải trùm kín từ đầu đến chân. Trên bức tường phía sau là dòng chữ cao bằng tòa nhà năm tầng: \"Cái chết cho nước Mỹ\".",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T01_Split_World_Contrast",
+      "hud_banner": {
+        "text": "BÊN PHẢI: TEHRAN THẬP NIÊN 1980",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.10,
+        "pan_x_start": 0,
+        "pan_x_end": 65,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 205, "y": 725, "scale": 1.0, "emotion": "shocked", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.0,
+          "action_type": "PHOTO_CARD_LEFT",
+          "label": "Tehran, 1970",
+          "sub_label": "\"Paris phương Đông?\"",
+          "photo_file": "cum_01_Hoi_I/01_beat02_0007s-0018s_tehran_1970_shops.jpg"
+        },
+        {
+          "bt": 0.35,
+          "action_type": "PHOTO_CARD_RIGHT",
+          "label": "Tehran, 1980",
+          "sub_label": "\"Biển đen kịt trùm kín từ đầu đến chân\"",
+          "photo_file": "cum_01_Hoi_I/04_beat03_0018s-0028s_tehran_1980_revolution.jpg"
+        },
+        {
+          "bt": 2.50,
+          "action_type": "CHADOR_ROW_5",
+          "label": "5_CHADOR_ICONS"
+        },
+        {
+          "bt": 6.10,
+          "action_type": "BUILDING_5_FLOORS",
+          "label": "CAO 5 TẦNG!"
+        },
+        {
+          "bt": 7.95,
+          "action_type": "STAMP_SLAM_RIGHT",
+          "label": "\"CÁI CHẾT CHO NƯỚC MỸ!\""
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.35, "sfx_file": "whoosh_transition.wav", "gain_db": -6.0 },
+        { "bt": 7.95, "sfx_file": "stamp_slam.wav", "gain_db": -5.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_04",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_04.wav",
+      "source_mp3_t0": 22.127,
+      "source_mp3_t1": 32.292,
+      "t0": 22.127029,
+      "t1": 32.292018,
+      "duration": 10.164989,
+      "narration_text": "Hai bức ảnh này không phải được chụp ở hai hành tinh khác nhau. Chúng được chụp tại cùng một con phố ở thủ đô Tehran, cách nhau đúng 10 năm. Đất nước đó là Iran.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T08_Fact_vs_Myth_Strike",
+      "hud_banner": {
+        "text": "Chụp ở 2 hành tinh khác nhau?",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.14,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 215, "y": 735, "scale": 1.02, "emotion": "explaining", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.25,
+          "action_type": "TWO_PLANETS_MYTH",
+          "label": "KHÔNG PHẢI 2 HÀNH TINH!"
+        },
+        {
+          "bt": 3.90,
+          "action_type": "SATELLITE_TEHRAN_REVEAL",
+          "label": "CÙNG 1 CON PHỐ • CÁCH NHAU 10 NĂM!",
+          "sub_label": "I R A N",
+          "photo_file": "cum_01_Hoi_I/07_beat04_0028s-0034s_satellite_iran_middle_east.jpg"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 1.50, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 3.90, "sfx_file": "whoosh_transition.wav", "gain_db": -5.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_05",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_05.wav",
+      "source_mp3_t0": 32.292,
+      "source_mp3_t1": 35.707,
+      "t0": 32.292018,
+      "t1": 35.706984,
+      "duration": 3.414966,
+      "narration_text": "Và đây là điều khiến nơi này trở nên cực kỳ kỳ lạ.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T05_Data_Chart_Scale",
+      "hud_banner": {
+        "text": "Và đây là điều khiến nơi này trở nên...",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.08,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 960, "y": 720, "scale": 1.18, "emotion": "shocked", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        { "bt": 2.10, "action_type": "PARADOX_QUESTION_BURST", "label": "CỰC KỲ KỲ LẠ!" }
+      ],
+      "sfx_events": [
+        { "bt": 2.10, "sfx_file": "stamp_slam.wav", "gain_db": -6.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_06",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_06.wav",
+      "source_mp3_t0": 35.707,
+      "source_mp3_t1": 47.382,
+      "t0": 35.706984,
+      "t1": 47.382018,
+      "duration": 11.675034,
+      "narration_text": "Iran là một quốc gia mà phần lớn dân số dưới 35 tuổi, có học thức cao và lướt Instagram nhiều bậc nhất thế giới. Nhưng họ lại bị cai trị bởi một hội đồng những giáo sĩ già mặc áo choàng từ thế kỷ thứ 7.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T01_Split_World_Contrast",
+      "hud_banner": {
+        "text": "Nghịch lý Iran: Giới trẻ hiện đại vs Giáo sĩ thế kỷ thứ 7",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.12,
+        "pan_x_start": -40,
+        "pan_x_end": 40,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 480, "y": 715, "scale": 1.0, "emotion": "explaining", "neck_insert_px": 35 },
+        { "role": "char_iran_cleric", "x": 1440, "y": 715, "scale": 1.0, "emotion": "stern", "neck_insert_px": 34 }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.25,
+          "action_type": "SPLIT_YOUTH_LEFT",
+          "label": "dưới 35 tuổi",
+          "sub_label": "Lướt Instagram top đầu thế giới"
+        },
+        {
+          "bt": 6.65,
+          "action_type": "SPLIT_CLERICS_RIGHT",
+          "label": "Hội đồng giáo sĩ già",
+          "sub_label": "ÁO CHOÀNG THẾ KỶ THỨ 7"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 1.40, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 6.65, "sfx_file": "stamp_slam.wav", "gain_db": -5.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_07",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_07.wav",
+      "source_mp3_t0": 47.382,
+      "source_mp3_t1": 55.667,
+      "t0": 47.382018,
+      "t1": 55.666984,
+      "duration": 8.284966,
+      "narration_text": "Ở đó, bạn có thể bị bắt vào tù vì khiêu vũ trên đường phố, vì dắt chó đi dạo, hay chỉ vì một cơn gió vô tình thổi lệch chiếc khăn trùm đầu của bạn.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T02_Three_Cards_Fly_In",
+      "hud_banner": {
+        "text": "Ở đó, bạn có thể bị bắt bỏ tù chỉ vì:",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.05,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 200, "y": 725, "scale": 0.98, "emotion": "scared", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        { "bt": 0.90, "action_type": "PRISON_CAGE_RIGHT", "label": "BẮT BỎ TÙ!" },
+        { "bt": 2.00, "action_type": "CAUSE_ARROW_1", "label": "Khiêu vũ trên đường phố" },
+        { "bt": 3.60, "action_type": "CAUSE_ARROW_2", "label": "Dắt chó đi dạo" },
+        { "bt": 5.45, "action_type": "CAUSE_ARROW_3", "label": "Gió thổi lệch khăn trùm đầu" }
+      ],
+      "sfx_events": [
+        { "bt": 0.90, "sfx_file": "jail_bar_clang.wav", "gain_db": -5.5 },
+        { "bt": 2.00, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 3.60, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 5.45, "sfx_file": "pop_card.wav", "gain_db": -6.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_08",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_08.wav",
+      "source_mp3_t0": 55.667,
+      "source_mp3_t1": 62.347,
+      "t0": 55.666984,
+      "t1": 62.346984,
+      "duration": 6.68,
+      "narration_text": "Vậy bằng cách nào mà một trong những nền văn minh cởi mở, rực rỡ nhất lịch sử nhân loại... lại tự nhốt mình vào bóng tối?",
+      "lighting_mode": "PRISON_NIGHT",
+      "scene_template": "T03_Prison_Bars_Slam",
+      "hud_banner": {
+        "text": "Nền văn minh cởi mở, rực rỡ nhất lịch sử...",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.10,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 185, "y": 730, "scale": 0.98, "emotion": "shocked", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        { "bt": 0.10, "action_type": "CIVILIZATION_SKYLINE", "label": "VĂN MINH RỰC RỠ" },
+        { "bt": 4.85, "action_type": "SLAM_PRISON_BARS", "label": "...LẠI TỰ NHỐT MÌNH VÀO BÓNG TỐI?" }
+      ],
+      "sfx_events": [
+        { "bt": 0.50, "sfx_file": "whoosh_transition.wav", "gain_db": -6.0 },
+        { "bt": 4.85, "sfx_file": "jail_bar_clang.wav", "gain_db": -5.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_09",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_09.wav",
+      "source_mp3_t0": 62.347,
+      "source_mp3_t1": 70.662,
+      "t0": 62.346984,
+      "t1": 70.662018,
+      "duration": 8.315034,
+      "narration_text": "Người Ba Tư có một câu ngạn ngữ cổ: \"Nếu bạn trải tấm thảm đẹp nhất thế giới ngay giữa ngã tư đường của những kẻ cướp, chúng sẽ giẫm nát nó.\"",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "CUSTOM_METAPHOR_STAGE",
+      "hud_banner": {
+        "text": "Ngạn ngữ cổ Ba Tư:",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.10,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 225, "y": 725, "scale": 0.98, "emotion": "explaining", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        { "bt": 1.80, "action_type": "UNROLL_PERSIAN_CARPET", "label": "\"Trải tấm thảm đẹp nhất ngay giữa ngã tư đường...\"" },
+        { "bt": 6.20, "action_type": "BOOTS_STOMP_CARPET", "label": "KẺ CƯỚP SẼ GIẪM NÁT NÓ!" }
+      ],
+      "sfx_events": [
+        { "bt": 1.80, "sfx_file": "whoosh_transition.wav", "gain_db": -6.0 },
+        { "bt": 6.20, "sfx_file": "stamp_slam.wav", "gain_db": -5.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_10",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_10.wav",
+      "source_mp3_t0": 70.662,
+      "source_mp3_t1": 81.067,
+      "t0": 70.662018,
+      "t1": 81.066984,
+      "duration": 10.404966,
+      "narration_text": "Suốt 2.500 năm, Iran chính là tấm thảm đó. Nằm kẹp giữa Nga, Ấn Độ, thế giới Ả Rập và các đế chế phương Tây—với một biển dầu mỏ khổng lồ nằm ngay dưới chân.",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "T06_Geopolitics_Map_Spotlight",
+      "hud_banner": {
+        "text": "Suốt 2.500 năm: Iran chính là tấm thảm đó",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.10,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 215, "y": 730, "scale": 0.96, "emotion": "explaining", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.25,
+          "action_type": "MAP_ARROWS_4_EMPIRES",
+          "label": "KẸP GIỮA 4 ĐẾ CHẾ",
+          "photo_file": "cum_01_Hoi_I/07_beat04_0028s-0034s_satellite_iran_middle_east.jpg"
+        },
+        {
+          "bt": 7.60,
+          "action_type": "OIL_SEA_ERUPT",
+          "label": "BIỂN DẦU MỎ KHỔNG LỒ DƯỚI CHÂN!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.25, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 7.60, "sfx_file": "stamp_slam.wav", "gain_db": -5.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_11",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_11.wav",
+      "source_mp3_t0": 81.067,
+      "source_mp3_t1": 95.292,
+      "t0": 81.066984,
+      "t1": 95.291995,
+      "duration": 14.225011,
+      "narration_text": "Hãy giữ tấm thảm đó trong đầu. Bởi vì toàn bộ lịch sử của Iran hiện đại là câu chuyện về một người thợ dệt đã quá mệt mỏi vì bị cướp bóc, đến mức ông ta quyết định đan những chiếc gai nhọn tẩm độc vào từng sợi chỉ... và thách thức cả thế giới dám bước lên.",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "CUSTOM_METAPHOR_STAGE",
+      "hud_banner": {
+        "text": "Người thợ dệt đan gai nhọn tẩm độc vào tấm thảm Ba Tư",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.15,
+        "pan_x_start": -30,
+        "pan_x_end": 45,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 420, "y": 720, "scale": 1.0, "emotion": "stern", "neck_insert_px": 35 },
+        { "role": "char_iran_cleric", "x": 1460, "y": 720, "scale": 1.0, "emotion": "angry", "neck_insert_px": 34 }
+      ],
+      "sub_triggers_bt": [
+        { "bt": 1.20, "action_type": "WEAVER_CARPET_STAGE", "label": "\"Quá mệt mỏi vì bị cướp bóc...\"" },
+        { "bt": 8.60, "action_type": "POISON_SPIKES_SPROUT", "label": "ĐAN GAI NHỌN TẨM ĐỘC VÀO SỢI CHỈ!" },
+        { "bt": 11.80, "action_type": "CHALLENGE_WORLD_STAMP", "label": "THÁCH THỨC CẢ THẾ GIỚI BƯỚC LÊN!" }
+      ],
+      "sfx_events": [
+        { "bt": 1.20, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 8.60, "sfx_file": "sword_clash.wav", "gain_db": -5.5 },
+        { "bt": 11.80, "sfx_file": "stamp_slam.wav", "gain_db": -5.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_12",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_12.wav",
+      "source_mp3_t0": 95.292,
+      "source_mp3_t1": 102.787,
+      "t0": 95.291995,
+      "t1": 102.786735,
+      "duration": 7.49474,
+      "narration_text": "Và mọi chuyện bắt đầu từ một cái ống đất sét, 300 chiến binh Hy Lạp mặc quần đùi đỏ, và một lời nói dối kéo dài hai thiên niên kỷ.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T02_Three_Cards_Fly_In",
+      "hud_banner": {
+        "text": "Và mọi chuyện bắt đầu từ...",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 116,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.05,
+        "pan_x_start": 0,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": false
+      },
+      "characters": [
+        { "role": "char_ziro_host", "x": 195, "y": 725, "scale": 0.96, "emotion": "smug", "neck_insert_px": 35 }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 1.10,
+          "action_type": "FLY_CARD_1",
+          "label": "1. Ống đất sét Cyrus",
+          "sub_label": "\"Tuyên ngôn nhân quyền cổ đại\"",
+          "photo_file": "cum_02_Hoi_II_seg_2_1_2_2/02_beat04_0145s-0168s_cyrus_cylinder_british_museum.jpg"
+        },
+        {
+          "bt": 2.25,
+          "action_type": "FLY_CARD_2",
+          "label": "2. 300 lính quần đùi đỏ",
+          "sub_label": "\"Trận chiến Thermopylae\"",
+          "photo_file": "cum_03_Skit_1/03_beat04_0235s-0244s_spartan_red_trunks_baby_oil.jpg"
+        },
+        {
+          "bt": 4.65,
+          "action_type": "FLY_CARD_3",
+          "label": "3. Lời nói dối 2.000 năm",
+          "sub_label": "\"Góc nhìn sử gia Hy Lạp\"",
+          "photo_file": "cum_03_Skit_1/05_beat08_0252s-0261s_greek_historian_writing.jpg"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 1.10, "sfx_file": "pop_card.wav", "gain_db": -6.0 },
+        { "bt": 2.25, "sfx_file": "sword_clash.wav", "gain_db": -6.0 },
+        { "bt": 4.65, "sfx_file": "stamp_slam.wav", "gain_db": -5.5 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "episode_id": "EP01_Iran",
+  "act_id": "HỒI I",
+  "cluster_id": "cum_01_Hoi_I",
+  "cluster_type": "HOI_PHAN_TICH",
+  "segments": [
+    "1.1",
+    "1.2",
+    "1.3"
+  ],
+  "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau | Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại | Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+  "cluster_wav_file": "voice_cum_01_Hoi_I.wav",
+  "total_duration_sec": 102.786735,
+  "beats_count": 12,
+  "beats": [
+    {
+      "beat_id": "beat_01",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_01.wav",
+      "source_mp3_t0": 0.0,
+      "source_mp3_t1": 2.032,
+      "t0": 0.0,
+      "t1": 2.032132,
+      "duration": 2.032132,
+      "narration_text": "Hãy nhìn vào hai bức ảnh này."
+    },
+    {
+      "beat_id": "beat_02",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_02.wav",
+      "source_mp3_t0": 2.032,
+      "source_mp3_t1": 12.237,
+      "t0": 2.032132,
+      "t1": 12.23703,
+      "duration": 10.204898,
+      "narration_text": "Bên trái: Phụ nữ mặc váy ngắn, tóc xõa ngang vai, bước đi dưới nắng vàng giữa những rạp chiếu phim và quán cà phê mở. Trông giống như Paris hay Los Angeles."
+    },
+    {
+      "beat_id": "beat_03",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_03.wav",
+      "source_mp3_t0": 12.237,
+      "source_mp3_t1": 22.127,
+      "t0": 12.23703,
+      "t1": 22.127393,
+      "duration": 9.890363,
+      "narration_text": "Bên phải: Một biển đen kịt những tấm vải trùm kín từ đầu đến chân. Trên bức tường phía sau là dòng chữ cao bằng tòa nhà năm tầng: \"Cái chết cho nước Mỹ\"."
+    },
+    {
+      "beat_id": "beat_04",
+      "segment_id": "1.1",
+      "author_visual_note": "Hai bức ảnh chụp cùng một góc phố Tehran đặt cạnh nhau",
+      "wav_file": "beats_wav/beat_04.wav",
+      "source_mp3_t0": 22.127,
+      "source_mp3_t1": 32.292,
+      "t0": 22.127393,
+      "t1": 32.292064,
+      "duration": 10.164671,
+      "narration_text": "Hai bức ảnh này không phải được chụp ở hai hành tinh khác nhau. Chúng được chụp tại cùng một con phố ở thủ đô Tehran, cách nhau đúng 10 năm. Đất nước đó là Iran."
+    },
+    {
+      "beat_id": "beat_05",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_05.wav",
+      "source_mp3_t0": 32.292,
+      "source_mp3_t1": 35.707,
+      "t0": 32.292064,
+      "t1": 35.706894,
+      "duration": 3.41483,
+      "narration_text": "Và đây là điều khiến nơi này trở nên cực kỳ kỳ lạ."
+    },
+    {
+      "beat_id": "beat_06",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_06.wav",
+      "source_mp3_t0": 35.707,
+      "source_mp3_t1": 47.382,
+      "t0": 35.706894,
+      "t1": 47.382064,
+      "duration": 11.67517,
+      "narration_text": "Iran là một quốc gia mà phần lớn dân số dưới 35 tuổi, có học thức cao và lướt Instagram nhiều bậc nhất thế giới. Nhưng họ lại bị cai trị bởi một hội đồng những giáo sĩ già mặc áo choàng từ thế kỷ thứ 7."
+    },
+    {
+      "beat_id": "beat_07",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_07.wav",
+      "source_mp3_t0": 47.382,
+      "source_mp3_t1": 55.667,
+      "t0": 47.382064,
+      "t1": 55.666735,
+      "duration": 8.284671,
+      "narration_text": "Ở đó, bạn có thể bị bắt vào tù vì khiêu vũ trên đường phố, vì dắt chó đi dạo, hay chỉ vì một cơn gió vô tình thổi lệch chiếc khăn trùm đầu của bạn."
+    },
+    {
+      "beat_id": "beat_08",
+      "segment_id": "1.2",
+      "author_visual_note": "Cảnh sát đạo đức tuần tra, xen lẫn hình ảnh giới trẻ Iran hiện đại",
+      "wav_file": "beats_wav/beat_08.wav",
+      "source_mp3_t0": 55.667,
+      "source_mp3_t1": 62.347,
+      "t0": 55.666735,
+      "t1": 62.347143,
+      "duration": 6.680408,
+      "narration_text": "Vậy bằng cách nào mà một trong những nền văn minh cởi mở, rực rỡ nhất lịch sử nhân loại... lại tự nhốt mình vào bóng tối?"
+    },
+    {
+      "beat_id": "beat_09",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_09.wav",
+      "source_mp3_t0": 62.347,
+      "source_mp3_t1": 70.662,
+      "t0": 62.347143,
+      "t1": 70.662041,
+      "duration": 8.314898,
+      "narration_text": "Người Ba Tư có một câu ngạn ngữ cổ: \"Nếu bạn trải tấm thảm đẹp nhất thế giới ngay giữa ngã tư đường của những kẻ cướp, chúng sẽ giẫm nát nó.\""
+    },
+    {
+      "beat_id": "beat_10",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_10.wav",
+      "source_mp3_t0": 70.662,
+      "source_mp3_t1": 81.067,
+      "t0": 70.662041,
+      "t1": 81.066735,
+      "duration": 10.404694,
+      "narration_text": "Suốt 2.500 năm, Iran chính là tấm thảm đó. Nằm kẹp giữa Nga, Ấn Độ, thế giới Ả Rập và các đế chế phương Tây—với một biển dầu mỏ khổng lồ nằm ngay dưới chân."
+    },
+    {
+      "beat_id": "beat_11",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_11.wav",
+      "source_mp3_t0": 81.067,
+      "source_mp3_t1": 95.292,
+      "t0": 81.066735,
+      "t1": 95.292109,
+      "duration": 14.225374,
+      "narration_text": "Hãy giữ tấm thảm đó trong đầu. Bởi vì toàn bộ lịch sử của Iran hiện đại là câu chuyện về một người thợ dệt đã quá mệt mỏi vì bị cướp bóc, đến mức ông ta quyết định đan những chiếc gai nhọn tẩm độc vào từng sợi chỉ... và thách thức cả thế giới dám bước lên."
+    },
+    {
+      "beat_id": "beat_12",
+      "segment_id": "1.3",
+      "author_visual_note": "Bản đồ địa chính trị Trung Đông thu phóng vào vị trí của Iran và các mỏ dầu",
+      "wav_file": "beats_wav/beat_12.wav",
+      "source_mp3_t0": 95.292,
+      "source_mp3_t1": 102.787,
+      "t0": 95.292109,
+      "t1": 102.786735,
+      "duration": 7.494626,
+      "narration_text": "Và mọi chuyện bắt đầu từ một cái ống đất sét, 300 chiến binh Hy Lạp mặc quần đùi đỏ, và một lời nói dối kéo dài hai thiên niên kỷ."
+    }
+  ]
+}

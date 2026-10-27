@@ -1,0 +1,21 @@
+# Kho Khuôn Mẫu Cảnh Hồi Phân Tích & Quy Tắc Sân Khấu Liên Hoàn (`Analytical Stage Templates`)
+
+## Mục 1. Bảng 8 Khuôn Mẫu Bố Cục Sân Khấu Cho Các Hồi Phân Tích (`T01` $\rightarrow$ `T08`)
+
+| Mã Khuôn Mẫu | Khi nào sử dụng (Nếu lời dẫn nói về X) | Cấu trúc Sân khấu Đa Nhịp & Chữ Động (Thì dàn dựng Y) | Cấu hình Camera & SFX Mặc định |
+| :--- | :--- | :--- | :--- |
+| **`T01_Split_World_Contrast`** | So sánh 2 bức ảnh (`Bên trái 1970 vs Bên phải 1980`), 2 thế hệ (`Giới trẻ <35 tuổi vs Giáo sĩ TK 7`). | Hỗ trợ cả **Sân khấu Liên hoàn (`Left -> Right`)** lẫn **Chia đôi `50/50`**: Nhân vật/thẻ ảnh bật ra theo từng mốc `bt`, kèm con dấu và đạo cụ chi tiết (rạp phim, cà phê, hàng người Chador, tòa nhà 5 tầng). | `zoom: 1.00 -> 1.15`; SFX: `whoosh_transition.wav` + `pop_card.wav` + `stamp_slam.wav`. |
+| **`T02_Three_Cards_Fly_In`** | Liệt kê 3 nguyên nhân dẫn tới 1 hậu quả (VD: *3 lý do bị bỏ tù*) hoặc 3 mảnh ghép mở đầu Hồi mới. | Nếu là **3 nguyên nhân -> Hậu quả**: Xếp 3 thẻ biểu tượng dọc bên trái (`x = 540`) kèm chữ gõ mượt và **3 mũi tên cong (`draw_curved_arrow`) chỉ thẳng vào lồng sắt nhà tù** bên phải (`x = 1560`). Nếu là **3 trụ cột**: Xếp 3 thẻ ảnh tư liệu ngang cân đối. | `zoom <= 1.06`, `pan_x = 0`; SFX: `pop_card.wav` theo từng mục + `jail_bar_clang.wav` / `stamp_slam.wav`. |
+| **`T03_Prison_Bars_Slam`** | Văn minh rực rỡ sụp đổ vào bóng tối, bắt bớ, tống giam, mất tự do. | Nửa đầu (`bt < bt_slam`): Bầu trời đêm sáng đèn vàng rực rỡ trên quần thể cung điện/đô thị văn minh; đúng giây `bt_slam` (*"tự nhốt mình vào bóng tối"*): **tắt phụt toàn bộ đèn cửa sổ + sập song sắt nhà tù từ đỉnh màn hình xuống** kèm con dấu đỏ! | `zoom: 1.00 -> 1.12` + `shake_amp = 15px` khi sập song sắt; SFX: `jail_bar_clang.wav` + `stamp_slam.wav`. |
+| **`T04_Empire_Parade`** | Sự trỗi dậy của đế chế cổ đại, thời kỳ hoàng kim khoan dung văn minh. | Nền cát vàng `#EAE0CE` hoặc thẻ tư liệu `cyrus_cylinder_1.jpg`; đối chiếu với màn hình TV phương Tây chiếu cảnh quái vật đột biến gen. | `zoom: 1.00 -> 1.10`; SFX: `whoosh_transition.wav` + `pop_card.wav`. |
+| **`T05_Data_Chart_Scale`** | Câu dẫn nhập cao trào (*"Và đây là điều khiến nơi này trở nên cực kỳ kỳ lạ"*) hoặc con số thống kê. | Nhân vật dẫn chuyện phóng lớn ở trung tâm (`x = 960`), gõ chữ mượt ở trên; đúng giây nhấn giọng bật con dấu đỏ `"CỰC KỲ KỲ LẠ!"` kèm các dấu chấm hỏi `?` vây quanh. | `zoom: 1.00 -> 1.08`; SFX: `whoosh_transition.wav` + `stamp_slam.wav`. |
+| **`T06_Geopolitics_Map_Spotlight`** | Địa chính trị Trung Đông, kẹp giữa các đế chế và biển dầu mỏ dưới chân. | Bản đồ vệ tinh `real_satellite_iran_middle_east.jpg` khoanh vùng biên giới vàng Iran, 4 mũi tên/nhãn đế chế (`Nga, Ấn Độ, Ả Rập, Phương Tây`) ép vào 4 hướng và giàn khoan biển dầu mỏ phun trào ở đáy. | `zoom: 1.00 -> 1.15`; SFX: `pop_card.wav` + `stamp_slam.wav`. |
+| **`T07_Icon_Grid_Counter`** | Nhấn mạnh quy mô số lượng (đội quân khổng lồ, hàng loạt lệnh cấm). | Lưới biểu tượng nhân bản liên hoàn theo từng mốc `bt` kèm nhãn số lượng. | `zoom = 1.04`; SFX: chuỗi `pop_card.wav`. |
+| **`T08_Fact_vs_Myth_Strike`** | Bác bỏ ngộ nhận (*"Không phải 2 hành tinh khác nhau -> Cùng 1 con phố Tehran cách nhau 10 năm"*). | Nửa đầu (`bt < bt_switch`): Vẽ 2 hành tinh bị gạch chéo đỏ `X` + dấu `"KHÔNG PHẢI 2 HÀNH TINH!"`; nửa sau (`bt >= bt_switch`): Chuyển sang bản đồ vệ tinh Iran làm tối vùng ngoài, bật sáng biên giới Iran, ghim đỏ nhấp nháy `"THỦ ĐÔ TEHRAN"`, đếm năm `1 -> 10 NĂM` và hiện chữ lớn `"I R A N"`. | `zoom: 1.00 -> 1.18` đẩy vào Tehran; SFX: `pop_card.wav` + `stamp_slam.wav`. |
+
+---
+
+## Mục 2. Quy Tắc Phối Hợp Khuôn Mẫu & Sân Khấu Liên Hoàn (`Continuous Stage Progression`)
+
+- **✅ Ví dụ Đúng (Đạt chuẩn):** Ở chuỗi `beat_01 -> beat_02 -> beat_03` của Hồi 1, sân khấu giữ tính liên tục: `beat_01` mở 2 khung ảnh `[?]` $\rightarrow$ `beat_02` lật khung Bên trái thành ảnh `Tehran, 1970` và bật thêm ảnh *Đại lộ, Rạp phim, Cà phê mở, Giống Paris/LA* $\rightarrow$ `beat_03` giữ nguyên ảnh 1970 ở Bên trái và đập ảnh `Tehran, 1980` xuống Bên phải kèm hàng người Chador đen, tòa nhà 5 tầng và dấu `"CÁI CHẾT CHO NƯỚC MỸ!"`.
+- **❌ Ví dụ Sai (Bị cấm):** Biến `beat_02` thành 3 thẻ bài dàn ngang không liên quan tới `beat_01` và `beat_03`, hoặc gắn nhãn `PHÂN ĐOẠN 1.1` và hộp phụ đề dưới đáy màn hình.

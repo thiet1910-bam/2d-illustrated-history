@@ -1,0 +1,231 @@
+{
+  "cluster_id": "cum_01_Hoi_I",
+  "mixed_wav_path": "E:\\02_CHANNEL\\thu-nghiem\\edit-video\\2D-Illustrated-History\\Du-an-2D-Illustrated-History\\dung-video-lich-su-hoat-hinh-2d\\2_nguyen_lieu\\EP01_Iran\\cac_cum\\cum_01_Hoi_I\\mixed_audio_cum_01_Hoi_I.wav",
+  "sample_rate": 44100,
+  "total_samples": 4532895,
+  "expected_duration_sec": 102.786735,
+  "mixed_duration_sec": 102.786735,
+  "drift_sec": 0.0,
+  "zero_drift_pass": true,
+  "sfx_events_mixed": 27,
+  "bgm_track": "bgm_tense_history.wav",
+  "bgm_rms": 0.0487,
+  "sfx_events_detail": [
+    {
+      "beat_id": "beat_01",
+      "bt_sec": 0.25,
+      "global_t_sec": 0.25,
+      "sfx_file": "whoosh_transition.wav",
+      "gain_db": -6.0,
+      "rms": 0.10287
+    },
+    {
+      "beat_id": "beat_02",
+      "bt_sec": 0.45,
+      "global_t_sec": 2.482,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_02",
+      "bt_sec": 3.8,
+      "global_t_sec": 5.832,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_02",
+      "bt_sec": 7.9,
+      "global_t_sec": 9.932,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -6.0,
+      "rms": 0.10824
+    },
+    {
+      "beat_id": "beat_03",
+      "bt_sec": 0.35,
+      "global_t_sec": 12.587,
+      "sfx_file": "whoosh_transition.wav",
+      "gain_db": -6.0,
+      "rms": 0.10287
+    },
+    {
+      "beat_id": "beat_03",
+      "bt_sec": 7.95,
+      "global_t_sec": 20.187,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -5.5,
+      "rms": 0.11466
+    },
+    {
+      "beat_id": "beat_04",
+      "bt_sec": 1.5,
+      "global_t_sec": 23.627,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_04",
+      "bt_sec": 3.9,
+      "global_t_sec": 26.027,
+      "sfx_file": "whoosh_transition.wav",
+      "gain_db": -5.5,
+      "rms": 0.10897
+    },
+    {
+      "beat_id": "beat_05",
+      "bt_sec": 2.1,
+      "global_t_sec": 34.392,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -6.0,
+      "rms": 0.10824
+    },
+    {
+      "beat_id": "beat_06",
+      "bt_sec": 1.4,
+      "global_t_sec": 37.107,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_06",
+      "bt_sec": 6.65,
+      "global_t_sec": 42.357,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -5.5,
+      "rms": 0.11466
+    },
+    {
+      "beat_id": "beat_07",
+      "bt_sec": 0.9,
+      "global_t_sec": 48.282,
+      "sfx_file": "jail_bar_clang.wav",
+      "gain_db": -5.5,
+      "rms": 0.07036
+    },
+    {
+      "beat_id": "beat_07",
+      "bt_sec": 2.0,
+      "global_t_sec": 49.382,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_07",
+      "bt_sec": 3.6,
+      "global_t_sec": 50.982,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_07",
+      "bt_sec": 5.45,
+      "global_t_sec": 52.832,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_08",
+      "bt_sec": 0.5,
+      "global_t_sec": 56.167,
+      "sfx_file": "whoosh_transition.wav",
+      "gain_db": -6.0,
+      "rms": 0.10287
+    },
+    {
+      "beat_id": "beat_08",
+      "bt_sec": 4.85,
+      "global_t_sec": 60.517,
+      "sfx_file": "jail_bar_clang.wav",
+      "gain_db": -5.0,
+      "rms": 0.07453
+    },
+    {
+      "beat_id": "beat_09",
+      "bt_sec": 1.8,
+      "global_t_sec": 64.147,
+      "sfx_file": "whoosh_transition.wav",
+      "gain_db": -6.0,
+      "rms": 0.10287
+    },
+    {
+      "beat_id": "beat_09",
+      "bt_sec": 6.2,
+      "global_t_sec": 68.547,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -5.5,
+      "rms": 0.11466
+    },
+    {
+      "beat_id": "beat_10",
+      "bt_sec": 0.25,
+      "global_t_sec": 70.912,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_10",
+      "bt_sec": 7.6,
+      "global_t_sec": 78.262,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -5.5,
+      "rms": 0.11466
+    },
+    {
+      "beat_id": "beat_11",
+      "bt_sec": 1.2,
+      "global_t_sec": 82.267,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_11",
+      "bt_sec": 8.6,
+      "global_t_sec": 89.667,
+      "sfx_file": "sword_clash.wav",
+      "gain_db": -5.5,
+      "rms": 0.07011
+    },
+    {
+      "beat_id": "beat_11",
+      "bt_sec": 11.8,
+      "global_t_sec": 92.867,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -5.0,
+      "rms": 0.12145
+    },
+    {
+      "beat_id": "beat_12",
+      "bt_sec": 1.1,
+      "global_t_sec": 96.392,
+      "sfx_file": "pop_card.wav",
+      "gain_db": -6.0,
+      "rms": 0.09442
+    },
+    {
+      "beat_id": "beat_12",
+      "bt_sec": 2.25,
+      "global_t_sec": 97.542,
+      "sfx_file": "sword_clash.wav",
+      "gain_db": -6.0,
+      "rms": 0.06619
+    },
+    {
+      "beat_id": "beat_12",
+      "bt_sec": 4.65,
+      "global_t_sec": 99.942,
+      "sfx_file": "stamp_slam.wav",
+      "gain_db": -5.5,
+      "rms": 0.11466
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "skill_version": "2.0.0",
+  "video_spec": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "codec": "libx264",
+    "crf": 18,
+    "pixel_format": "yuv420p"
+  },
+  "color_palette": {
+    "daylight_paper_bg": [244, 239, 230],
+    "daylight_paper_hex": "#F4EFE6",
+    "warm_sand_bg": [234, 224, 206],
+    "warm_sand_hex": "#EAE0CE",
+    "prison_night_bg": [27, 34, 52],
+    "prison_night_hex": "#1B2234",
+    "brand_hoodie_red": [217, 56, 41],
+    "brand_hoodie_red_hex": "#D93829",
+    "brand_hoodie_shadow": [168, 36, 24],
+    "imperial_gold": [235, 180, 45],
+    "imperial_gold_hex": "#EBB42D",
+    "persian_blue": [43, 91, 132],
+    "persian_blue_hex": "#2B5B84",
+    "cleric_charcoal": [45, 48, 56],
+    "skin_light_peach": [250, 224, 200],
+    "skin_tan": [228, 192, 158],
+    "ink_black": [24, 24, 28],
+    "card_cream": [252, 249, 242],
+    "stamp_crimson": [205, 32, 32]
+  },
+  "character_anatomy": {
+    "outline_px": 5,
+    "inner_detail_px": 3,
+    "neck_insert_min_px": 28,
+    "neck_insert_max_px": 42,
+    "head_width_px": 144,
+    "head_height_px": 152,
+    "torso_width_px": 176,
+    "torso_height_px": 210,
+    "min_hero_height_ratio": 0.42
+  },
+  "safe_zones_and_camera": {
+    "hud_title_safe_y_min": 110,
+    "hud_title_safe_x_margin": 96,
+    "subtitle_safe_y_bottom": 960,
+    "three_cards_safe_x_offsets": [-540, 0, 540],
+    "max_zoom_for_3_cards": 1.06,
+    "viewport_isolation_zoom_threshold": 1.12,
+    "viewport_isolation_pan_threshold": 80
+  },
+  "audio_mixing_spec": {
+    "sample_rate": 44100,
+    "channels": 2,
+    "max_sync_drift_sec": 0.0,
+    "voice_gain_db": 0.0,
+    "sfx_gain_db": -6.0,
+    "bgm_ducked_gain_db": -16.0,
+    "bgm_pause_gain_db": -9.0,
+    "ducking_fade_ms": 180
+  },
+  "adaptive_clustering_and_cache": {
+    "min_cluster_duration_sec": 90.0,
+    "max_cluster_duration_sec": 240.0,
+    "max_beats_per_cluster": 22,
+    "act_regex_pattern": "(?i)^\\s*(?:HỒI|ACT|CHƯƠNG|PHẦN)\\s+([IVXLCDM0-9]+)\\s*[:\\-–]?\\s*(.*)$",
+    "segment_regex_pattern": "(?i)^\\s*(?:Phân đoạn|Đoạn|Mục|Scene)\\s+([0-9]+(?:\\.[0-9]+)?)\\s*[:\\-–]?\\s*(.*)$",
+    "skit_regex_pattern": "(?i)\\(\\s*(?:Chuyển nhịp\\s*)?Skit\\s*#?([0-9]+)\\s*[:\\-–]?\\s*(.*?)\\)",
+    "visual_note_regex_pattern": "(?i)\\(\\s*Hình ảnh\\s*:\\s*(.*?)\\)",
+    "enable_beat_mp4_cache": true,
+    "beat_cache_hash_algo": "md5_8char",
+    "concat_mode": "ffmpeg_stream_copy_lossless"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "character_id": "char_ziro_host",
+  "brand_palette": {
+    "hoodie_red": "#D93829",
+    "ink_outline": "#222222",
+    "skin_warm": "#F3D9C2"
+  },
+  "neck_insert_px": 35,
+  "sprites": [
+    "host_idle_closed.png",
+    "host_talk_half.png",
+    "host_talk_open.png",
+    "host_point_right.png",
+    "host_shocked_hands_up.png",
+    "host_stern.png"
+  ]
+}
