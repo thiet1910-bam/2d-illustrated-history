@@ -48,7 +48,7 @@ except ImportError:
     FFMPEG_EXE = "ffmpeg"
 
 FPS = 30
-ENGINE_CACHE_SALT = "ziro_2pass_v4_6"
+ENGINE_CACHE_SALT = "ziro_2pass_v5_skit_authentic"
 
 
 def compute_beat_hash(beat_data: dict) -> str:

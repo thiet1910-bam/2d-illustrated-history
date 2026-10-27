@@ -56,6 +56,14 @@ VALID_SFX_FILES = {
     "jail_bar_clang.wav",
     "typewriter_tick.wav",
     "sword_clash.wav",
+    "ziro_pop_soft.wav",
+    "ziro_light_off_thud.wav",
+    "ziro_padlock_slam.wav",
+    "ziro_scroll_unroll.wav",
+    "ziro_icon_pop_rapid.wav",
+    "ziro_rubber_stamp.wav",
+    "ziro_spear_drop.wav",
+    "ziro_poem_unroll.wav",
 }
 
 VALID_BGM_TRACKS = {
@@ -161,6 +169,8 @@ def validate_manifest(manifest_path: Path) -> tuple:
         hud = beat.get("hud_banner", {})
         hud_y = float(hud.get("y_center", 0))
         hud_pass = hud.get("render_pass", "")
+        hud_style = str(hud.get("style", "")).strip()
+        hud_text = str(hud.get("text", "")).strip()
         hud_sub_badge = str(hud.get("sub_badge", "")).strip()
         if hud_y < 110:
             errors.append(
@@ -174,6 +184,17 @@ def validate_manifest(manifest_path: Path) -> tuple:
             errors.append(
                 f"[{bid} | Gate 4 - Anti-Metadata Leak] Cấm hiển thị nhãn quản trị hậu trường `sub_badge: {hud_sub_badge}` lên màn hình video!"
             )
+        if data.get("cluster_type") == "SKIT_CHAM_BIEM":
+            if hud_style != "NONE" and hud_text != "":
+                errors.append(
+                    f"[{bid} | Gate 4 - Skit Overhead Typography Law] Cụm Skit (`SKIT_CHAM_BIEM`) bắt buộc `hud_banner.style = 'NONE'` và dùng chữ thoại trên đầu nhân vật (`skit_speech_captions`), cấm dùng tiêu đề đỉnh HUD!"
+                )
+            csg = beat.get("custom_scene_graph", {})
+            if isinstance(csg, dict) and csg:
+                if not csg.get("skit_stage_bg"):
+                    errors.append(
+                        f"[{bid} | Gate 4 - Skit Full-Stage Sitcom Law] Nhịp Skit dùng `custom_scene_graph` bắt buộc khai báo bối cảnh toàn màn hình `skit_stage_bg`!"
+                    )
 
         # Gate 5: Viewport Isolation khi zoom > 1.12 có >= 2 nhân vật
         cam = beat.get("camera", {})

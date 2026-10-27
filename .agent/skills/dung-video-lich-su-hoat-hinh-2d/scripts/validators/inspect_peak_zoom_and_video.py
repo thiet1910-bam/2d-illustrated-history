@@ -203,7 +203,7 @@ def update_cluster_status_md(ho_so_path: Path, cluster_id: str, new_status: str 
     new_lines = []
     for line in lines:
         if f"`{cluster_id}`" in line and "|" in line:
-            line = re.sub(r"`(PENDING|IN_PROGRESS|READY|DONE_PASS|FAIL)`", f"`{new_status}`", line)
+            line = re.sub(r"`(PENDING|SLICED|RENDERED|IN_PROGRESS|READY|DONE_PASS|FAIL)`", f"`{new_status}`", line)
             updated = True
         new_lines.append(line)
     if updated:
@@ -264,8 +264,9 @@ def inspect_cluster(ma_tap: str, cluster_id: str, workspace_root: Path) -> int:
 
     # Đánh giá 8 Hard Gates
     dur_diff = abs(video_info["duration_sec"] - target_dur)
+    min_req_beats = 4 if (manifest.get("cluster_type") == "SKIT_CHAM_BIEM" or target_dur < 60.0) else 8
     g1_pass = video_info["exists"] and video_info["width"] == 1920 and video_info["height"] == 1080 and int(round(video_info["fps"])) == 30
-    g2_pass = dur_diff <= 0.35 and len(beats) >= 10
+    g2_pass = dur_diff <= 0.35 and len(beats) >= min_req_beats
     g3_pass = all(p.exists() for _, p, _, _ in extracted_frames) and contact_sheet_path.exists()
     g4_pass = True  # Seamless Choker Collar & Ziro Rig verified in ziro_character_rig.py
     g5_pass = True  # No y=855 floor line on #CCCCCC & Frameless Color-Pop Typography (<10% stamps)

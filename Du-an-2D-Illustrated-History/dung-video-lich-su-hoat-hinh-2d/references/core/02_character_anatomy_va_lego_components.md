@@ -1,37 +1,36 @@
-# Giải Phẫu Nhân Vật Thương Hiệu, Quy Tắc Khớp Cổ & Thư Viện Khối Lego 2D
+# Giải Phẫu Nhân Vật Thương Hiệu, Cử Động Vi Mô (`Micro-Life Rig`) & 5 Đường Nét Chuyển Động 2D
 
-## Mục 1. Giải Phẫu Nhân Vật Thương Hiệu & Hệ Thống Nhân Vật Lịch Sử (`Character Rig Spec`)
+## Mục 1. Giải Phẫu Nhân Vật, Khớp Cổ Cắm Sâu & Cử Động Sống Động (`Character Rig & Micro-Life Spec`)
 
-| Nhóm nhân vật (Nếu vẽ X) | Cấu tạo giải phẫu & Trang phục bắt buộc (Thì áp dụng Y) | Thông số kỹ thuật cứng | Lỗi sai cần tránh |
+| Nhóm cấu hình (Nếu vẽ X) | Cấu tạo giải phẫu & Chuyển động bắt buộc (Thì áp dụng Y) | Thông số kỹ thuật cứng trong JSON / Engine | Lỗi sai cần tránh |
 | :--- | :--- | :--- | :--- |
-| **Nhân vật dẫn chuyện thương hiệu (`Ziro Brand Host`)** | Đầu tròn lớn màu da sáng `#FAE0C8`, tóc nâu nhô đỉnh đầu, mặc **áo Hoodie đỏ `#D93829`** có mũ trùm sau gáy, dây rút trắng và túi bụng. | Viền ngoài `5px` đen `#18181C`; đầu `144x152px`, thân `176x210px`, bóng đổ dưới chân elip mờ. | Vẽ thân hình thang trơn tuột không tay, không cổ áo hoặc đổi màu áo sang màu khác. |
-| **Nhân vật lịch sử / Đế chế cổ đại (`Historical Figures`)** | Giữ nguyên tỷ lệ đầu tròn Ziro nhưng gắn phụ kiện định danh: Vua Ba Tư đội vương miện vàng `#EBB42D` + râu quai nón; Lính Sparta mặc quần đùi đỏ + áo choàng; Sử gia Hy Lạp mặc áo choàng trắng lệch vai. | Có ít nhất **2 đạo cụ định danh trên người** (vương miện, giáo, cuộn giấy, khăn xếp) để nhìn 1 giây nhận ra ngay. | Vẽ hai nhân vật đối lập giống hệt nhau chỉ khác mỗi màu áo trơn. |
-| **Quy tắc Khớp Cổ Cắm Sâu (`Deep Neck-Overlap Law`)** | Trụ cổ phải được vẽ ở lớp giữa (`Layer Mid`), đầu cắm sâu vào bên trong cổ áo tối thiểu `15px`, phần trên của trụ cổ cắm sâu vào sau cằm từ `28px – 42px`. | `neck_top = head_bottom - 35px`; `neck_bottom = torso_top + 18px`; tuyệt đối không dùng phép toán cộng tọa độ rời rạc. | Đặt đáy đầu chạm đúng đỉnh cổ (`gap = 0px`) khiến khi nhân vật nhún thở bị lộ khe hở đứt lìa đầu. |
+| **Nhân vật dẫn chuyện (`Ziro Brand Host`) & Nhân vật lịch sử (`Historical Roles`)** | Đầu tròn lớn `#FAE0C8`, viền đen `5px` `#18181C`; mỗi vai lịch sử (`king`, `general`, `spartan`, `scholar`, `hollywood_xerxes`) có mũ/vương miện, râu, áo giáp và đạo cụ riêng (`scroll` có dấu sáp đỏ, `scepter`, `quill`, `shield`, `baby_oil`). | Trụ cổ cắm sâu `neck_insert_px: 28..42px`; trong Skit bật `hide_label: true` (không vẽ biển tên dưới chân). | Vẽ hai nhân vật giống hệt nhau chỉ đổi màu áo hoặc lộ khe hở đứt cổ khi nghiêng đầu. |
+| **Chớp mắt tự nhiên & Nhún nhịp thở khi thoại (`Auto Eye-Blink & Speech Bobbing`)** | Tự động chớp mắt chu kỳ **`3.1s` một lần** (khép mí mắt trong `0.13s`, lệch pha theo tọa độ `x` để 2 người không chớp cùng lúc) và nhún nhẹ thân trên `2.5px` theo nhịp giọng đọc. | `blink = True` mặc định trong `paste_char_safe`; biên độ nhún `bob_y = sin(bt * 9.5) * 2.5px`. | Để mắt nhân vật mở trừng trừng bất động suốt 40 giây như hình nộm giấy. |
+| **Bước đi trên sân khấu & Đổi tư thế tay/mặt giữa nhịp (`Walk Stride & Mid-Beat Pose Swap`)** | Nhân vật bước đi ngang sân khấu với 2 chân sải luân phiên (`walk_vx`, `walk_start_bt`) và tự động đổi tư thế tay/biểu cảm đúng giây cao trào (`pose_swap_bt`). | `walk_vx: px/s`, `walk_start_bt: s`; `pose_swap_bt: s`, `swap_left_arm`, `swap_right_arm`, `swap_emotion`. | Giữ nguyên 1 cánh tay giơ cứng đơ từ đầu nhịp đến cuối nhịp dù cảm xúc câu thoại đã đảo chiều. |
 
-- **✅ Ví dụ Đúng (Đạt chuẩn):** Nhân vật dẫn chuyện mặc áo Hoodie đỏ `#D93829`, trụ cổ có tọa độ `y1 = cy - 42`, `y2 = cy + 18` nằm kẹp giữa lớp Thân/Cổ áo và lớp Đầu; khi đầu nghiêng `6 độ` và nhún `8px`, khớp cổ vẫn liền mạch 100%.
-- **❌ Ví dụ Sai (Bị cấm):** Vẽ đầu là hình tròn ở `y = 300`, thân là hình chữ nhật ở `y = 410` không có trụ cổ nối giữa, tạo ra khoảng trống nền giấy cắt ngang cổ nhân vật.
+- **✅ Ví dụ Đúng (Đạt chuẩn):** Ở `beat_01` (*Skit 1*), Tướng Ba Tư cầm bức mật thư có dấu sáp đỏ (`prop_right: "scroll"`), mắt chớp tự nhiên mỗi `3.1s`; đúng giây `bt = 2.60s` khi mở thư đọc tin khẩn, thông số `pose_swap_bt: 2.60` kích hoạt đổi tay trái lên trán (`swap_left_arm: "raise"`) và nét mặt chuyển sang `shocked`.
+- **❌ Ví dụ Sai (Bị cấm):** Nhân vật đứng bất động không chớp mắt, không bước chân, không đổi tay suốt cả phân đoạn.
 
 ---
 
 ## Mục 2. Bảng Trạng Thái Biểu Cảm Khuôn Mặt & Cử Chỉ Tay (`Acting & Pose States`)
 
-| Trạng thái cảm xúc (`emotion`) | Cấu hình Mắt & Lông mày (`eyes_state`) | Cấu hình Miệng (`mouth_state`) | Cử chỉ Tay & Đạo cụ (`arm_pose`) |
+| Trạng thái cảm xúc (`emotion`) | Cấu hình Mắt & Lông mày (`eyes_state`) | Cấu hình Miệng (`mouth_state`) | Cử chỉ Tay & Đạo cụ (`left_arm` / `right_arm` / `prop_right`) |
 | :--- | :--- | :--- | :--- |
-| **`shocked` / `scared`** *(Bị kết án, hoảng hốt)* | Đồng tử thu nhỏ, lòng trắng mở to, lông mày dựng đứng chữ V ngược, thêm 2 giọt mồ hôi thái dương. | Miệng mở rộng hình bầu dục dọc đen, lưỡi hồng ở đáy. | Hai tay giơ cao ngang đầu hoặc ôm má. |
-| **`angry` / `stern`** *(Giáo sĩ cấm đoán, Tướng quát)* | Lông mày xếch chéo xuống tâm trán (`góc 25 độ`), mí trên cắt ngang nửa mắt. | Miệng mở gằn lộ hàm răng nghiến hoặc mép trễ xuống. | Tay phải chỉ thẳng về phía trước hoặc cầm búa/dấu đóng sập xuống. |
-| **`smug` / `sarcastic`** *(Châm biếm Skit, Sử gia bịa chuyện)* | Mắt lim dim nửa mí nhìn liếc sang ngang, một bên mày nhướng cao. | Miệng cười nhếch mép lệch một bên. | Một tay chống cằm hoặc cầm bút lông gà viết sổ. |
-| **`explaining` / `neutral`** *(Dẫn chuyện phân tích)* | Mắt tròn đen tiêu chuẩn, chớp mắt chu kỳ `3.2s` một lần (`3 frames`). | Nhép miệng 3 nấc (`closed / half / open`) theo biên độ giọng đọc. | Một tay mở lòng bàn tay hướng về phía thẻ bài/bản đồ vừa bật lên. |
-
-- **✅ Ví dụ Đúng (Đạt chuẩn):** Trong *Skit 1 (`beat_22`)*, khi viên tướng Ba Tư hỏi *"Bọn chúng mặc cái quái gì thế?"*, biểu cảm chuyển từ `neutral` sang `shocked` kèm giọt mồ hôi và tay chỉ thẳng vào lính Sparta.
-- **❌ Ví dụ Sai (Bị cấm):** Nhân vật đứng đơ như tượng gỗ với đúng 1 nét mặt cười mỉm trong suốt cảnh bị bỏ tù và cảnh chiến trận.
+| **`shocked` / `scared`** *(Hoảng hốt, Sững sờ)* | Đồng tử thu nhỏ, lòng trắng mở to, lông mày chữ V ngược, thêm giọt mồ hôi thái dương. | Miệng mở rộng bầu dục dọc đen, lưỡi hồng ở đáy. | `left_arm: "raise"`, `right_arm: "point"` hoặc cầm `scroll` / `shield`. |
+| **`angry` / `stern`** *(Tướng quát, Giáo sĩ cấm đoán)* | Lông mày xếch chéo xuống tâm trán (`25 độ`), mí trên cắt ngang nửa mắt. | Miệng mở gằn lộ hàm răng hoặc mép trễ xuống. | `right_arm: "point"` hoặc cầm `scepter` / `spear` chỉ thẳng về phía trước. |
+| **`smug` / `sarcastic`** *(Sử gia bịa chuyện, Mỉa mai)* | Mắt lim dim nửa mí liếc ngang, một bên mày nhướng cao đắc ý. | Miệng cười nhếch mép lệch một bên. | `left_arm: "chin"`, `right_arm: "write"` cầm bút lông ngỗng `quill`. |
+| **`explaining` / `neutral`** *(Báo cáo, Phân tích)* | Mắt tròn đen tiêu chuẩn, chớp mắt chu kỳ `3.1s` một lần. | Nhép miệng theo biên độ giọng đọc. | Mở lòng bàn tay hướng về phía bản đồ hoặc đạo cụ đang vẽ. |
 
 ---
 
-## Mục 3. Thư Viện Khối Đồ Họa Lắp Ghép Dùng Chung (`Reusable Lego Components`)
+## Mục 3. Bộ 5 Đường Nét Chuyển Động Vector 2D Chuẩn Ziro (`5 Animated Vector Line Primitives`)
 
-| Mã Khối Lego | Cấu trúc hiển thị vật lý | Tham số điều khiển (`Props`) | Khi nào sử dụng |
+| Mã Hiệu Ứng (`type` trong `vector_overlays`) | Hành vi Đồ họa Chuyển động Thực tế trên Sân khấu | Tham số Điều khiển trong JSON (`custom_scene_graph.vector_overlays`) | Khi nào sử dụng |
 | :--- | :--- | :--- | :--- |
-| **`Lego_EvidenceCard`** | Khung chữ nhật bo góc `18px`, nền `#FCF9F2`, viền đen `4px`, bóng đổ cứng `6px`, chứa Hình vẽ trung tâm + Nhãn chữ đáy. | `(x, y, w, h, title, icon_type, tilt_deg)` | Khi lời dẫn liệt kê các sự kiện, vật chứng, tội danh hoặc so sánh các mục. |
-| **`Lego_RubberStamp`** | Khung viền kép màu đỏ máu `#CD2020`, chữ in hoa đậm nghiêng `-14 độ`, đập từ độ phóng đại `scale = 2.2 -> 1.0`. | `(x, y, stamp_text, trigger_bt)` | Khi lời dẫn nhắc tới lệnh cấm, bác bỏ, kết tội (`BỊ CẤM`, `TỘI ĐỒ`, `BỊA ĐẶT`). |
-| **`Lego_PrisonBars`** | Hệ thống thanh sắt dọc màu xám thép `#2C3038` có ánh kim và thanh ngang khóa chặt, sập từ đỉnh màn hình `y = -1080 -> 0`. | `(bar_count, slam_bt, lock_target_x)` | Khi lời dẫn nói về bắt giam, đàn áp, tước đoạt tự do, cấm vận. |
-| **`Lego_SplitDivider`** | Đường cắt dọc hoặc chéo chính giữa màn hình (`x = 960`), viền đen `6px` kèm huy hiệu đối lập `VS` hoặc mũi tên thời gian. | `(left_theme, right_theme, badge_text)` | Khi đối chiếu 2 thời kỳ (`1970 vs Nay`), 2 góc nhìn (`Hollywood vs Lịch sử thật`). |
+| **1. `live_pencil_line`** *(Bút chì 2D tự vẽ đường đi)* | Cây bút chì gỗ vàng 2D có đầu tẩy hồng di chuyển theo quỹ đạo `points`, vẽ đường liền hoặc nét đứt (`dashed: true`) tới đâu hiện tới đó theo thời gian `draw_dur`. | `bt`, `draw_dur`, `points: [[x,y],...]`, `color`, `width`, `dashed`, `show_pencil: true`, `label`. | Khi chỉ đường tiến quân, vẽ biên giới hoặc đánh bọc sườn trên bàn bản đồ (`13:56`). |
+| **2. `wavy_steam_lines`** *(3 làn sóng hương/khói hình sin)* | 3 đường sóng hình sin uốn lượn bay lên liên tục (`sin(t*5.5 + phase)`) tạo hiệu ứng bốc khói nóng hoặc tỏa hương thơm dầu trẻ em. | `bt`, `x`, `y`, `height`, `spread`, `color`, `label`. | Khi tả mùi hương tỏa ra (dầu trẻ em, trà nóng) hoặc khói bốc lên từ chiến trường. |
+| **3. `sparkle_bursts`** *(Sao 4 cánh lấp lánh `✦`)* | Các ngôi sao 4 cánh co giãn nhịp nhàng (`pulsing scale`) quanh vật thể hoặc cơ bắp bóng nhẫy. | `bt`, `points: [[x,y,radius], ...]`, `color: "#FFD54F"`. | Khi nhấn mạnh độ bóng bẩy, lố bịch của hình tượng Hollywood hoặc kho báu. |
+| **4. `live_quill_scroll`** *(Cuộn giấy tự mở & Bút lông viết chữ)* | Cuộn giấy da dê mở rộng và cây bút lông ngỗng 2D tự động lướt viết từng dòng chữ (`lines`), tự động gạch đỏ từ cũ và bật chữ phóng đại kèm dấu chấm than `!`. | `bt`, `x`, `y`, `w`, `h`, `title`, `lines: [{bt, text, strike, color, bold}]`, `show_quill: true`. | Khi sử gia cổ đại (Herodotus) ngồi chép sử, thổi phồng số liệu hoặc ký sắc lệnh. |
+| **5. `live_ruler_measure`** *(Thước đo chiều cao tự rút lên)* | Thanh thước đo dọc có vạch chia tự động kéo từ chân lên đỉnh đầu (`0.0m -> 3.0m`) kèm bảng số nhảy động theo chiều cao nhân vật. | `bt`, `x`, `y_bottom`, `y_top`, `max_val: 3.0`, `unit: "m"`, `color`. | Khi châm biếm sự phóng đại kích thước/chiều cao nhân vật (Xerxes cao 3 mét) hoặc đo quy mô. |
+| **6. `checklist_board`** *(Bảng kiểm đánh dấu tích xanh `✓`)* | Bảng giấy kem treo cạnh nhân vật, lần lượt tích dấu `✓` xanh lá vào từng ô vuông đúng mốc giọng đọc liệt kê từng món đồ. | `bt`, `x`, `y`, `w`, `h`, `title`, `items: [{bt, text, checked}]`. | Khi liệt kê danh sách trang bị kỳ quặc (Áo choàng đỏ, quần đùi da, dầu trẻ em). |

@@ -1,0 +1,148 @@
+{
+  "episode_id": "EP01_Iran",
+  "act_id": "HỒI II",
+  "cluster_id": "cum_02_Hoi_II_seg_2_1_2_2",
+  "cluster_type": "HOI_PHAN_TICH",
+  "segments": [
+    "2.1",
+    "2.2"
+  ],
+  "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh | Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+  "cluster_wav_file": "voice_cum_02_Hoi_II_seg_2_1_2_2.wav",
+  "total_duration_sec": 107.511792,
+  "beats_count": 11,
+  "beats": [
+    {
+      "beat_id": "beat_01",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_01.wav",
+      "source_mp3_t0": 102.63,
+      "source_mp3_t1": 107.672,
+      "t0": 0.0,
+      "t1": 5.042063,
+      "duration": 5.042063,
+      "narration_text": "Trước khi có tên là Iran, vùng đất này được thế giới biết đến với cái tên: Ba Tư."
+    },
+    {
+      "beat_id": "beat_02",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_02.wav",
+      "source_mp3_t0": 107.672,
+      "source_mp3_t1": 115.202,
+      "t0": 5.042063,
+      "t1": 12.572108,
+      "duration": 7.530045,
+      "narration_text": "Và 2.500 năm trước, Ba Tư không phải là một kẻ yếu thế bị chà đạp. Nó là siêu cường đầu tiên của lịch sử nhân loại."
+    },
+    {
+      "beat_id": "beat_03",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_03.wav",
+      "source_mp3_t0": 115.202,
+      "source_mp3_t1": 130.497,
+      "t0": 12.572108,
+      "t1": 27.866734,
+      "duration": 15.294626,
+      "narration_text": "Năm 550 trước Công nguyên, một vị vua tên là Cyrus Đại đế đã thống nhất các bộ lạc Ba Tư và chinh phục gần như toàn bộ thế giới văn minh lúc bấy giờ—từ bờ biển Hy Lạp cho đến tận biên giới Ấn Độ. Gần một nửa dân số loài người trên Trái đất lúc đó sống dưới sự cai trị của ông."
+    },
+    {
+      "beat_id": "beat_04",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_04.wav",
+      "source_mp3_t0": 130.497,
+      "source_mp3_t1": 133.972,
+      "t0": 27.866734,
+      "t1": 31.341995,
+      "duration": 3.475261,
+      "narration_text": "Nhưng cách Cyrus cai trị mới là điều làm nên lịch sử."
+    },
+    {
+      "beat_id": "beat_05",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_05.wav",
+      "source_mp3_t0": 133.972,
+      "source_mp3_t1": 155.082,
+      "t0": 31.341995,
+      "t1": 52.452358,
+      "duration": 21.110363,
+      "narration_text": "Trong thế giới cổ đại, khi một vị vua chiếm được thành phố của bạn, quy trình thông thường là đốt sạch đền đài, giết đàn ông và bắt phụ nữ làm nô lệ. Cyrus làm điều ngược lại. Khi chiếm được Babylon, ông giải phóng những người nô lệ Do Thái và trả tiền để họ về xây lại đền thờ. Ông cho phép mọi dân tộc giữ nguyên tôn giáo, ngôn ngữ và phong tục của mình."
+    },
+    {
+      "beat_id": "beat_06",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_06.wav",
+      "source_mp3_t0": 155.082,
+      "source_mp3_t1": 166.367,
+      "t0": 52.452358,
+      "t1": 63.737347,
+      "duration": 11.284989,
+      "narration_text": "Ông cho khắc những quy tắc đó lên một khối đất sét hình bầu dục, to bằng quả bóng bầu dục. Các nhà sử học ngày nay gọi nó là \"Khối trụ Cyrus\"—bản tuyên ngôn nhân quyền đầu tiên của nhân loại."
+    },
+    {
+      "beat_id": "beat_07",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_07.wav",
+      "source_mp3_t0": 166.367,
+      "source_mp3_t1": 170.287,
+      "t0": 63.737347,
+      "t1": 67.657075,
+      "duration": 3.919728,
+      "narration_text": "Người Iran ngày nay vẫn vô cùng tự hào về cái ống đất sét đó."
+    },
+    {
+      "beat_id": "beat_08",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_08.wav",
+      "source_mp3_t0": 170.287,
+      "source_mp3_t1": 184.947,
+      "t0": 67.657075,
+      "t1": 82.316962,
+      "duration": 14.659887,
+      "narration_text": "Và hãy nhớ kỹ hình dáng của nó. Bởi vì 2.500 năm sau, một vị vua hiện đại của Iran sẽ mang chính cái ống đất sét này ra để tổ chức bữa tiệc xa hoa, điên rồ nhất thế kỷ 20... ngay trước khi ngai vàng của ông ta sụp đổ."
+    },
+    {
+      "beat_id": "beat_09",
+      "segment_id": "2.2",
+      "author_visual_note": "Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+      "wav_file": "beats_wav/beat_09.wav",
+      "source_mp3_t0": 184.947,
+      "source_mp3_t1": 192.907,
+      "t0": 82.316962,
+      "t1": 90.277166,
+      "duration": 7.960204,
+      "narration_text": "Nhưng nếu đế chế Ba Tư cổ đại văn minh và khoan dung như vậy... tại sao mỗi khi xem phim phương Tây, họ lại trông giống như những con quái vật?"
+    },
+    {
+      "beat_id": "beat_10",
+      "segment_id": "2.2",
+      "author_visual_note": "Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+      "wav_file": "beats_wav/beat_10.wav",
+      "source_mp3_t0": 192.907,
+      "source_mp3_t1": 198.302,
+      "t0": 90.277166,
+      "t1": 95.672336,
+      "duration": 5.39517,
+      "narration_text": "Câu trả lời nằm ở cuộc chiến nổi tiếng với người Hy Lạp vào năm 480 trước Công nguyên."
+    },
+    {
+      "beat_id": "beat_11",
+      "segment_id": "2.2",
+      "author_visual_note": "Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+      "wav_file": "beats_wav/beat_11.wav",
+      "source_mp3_t0": 198.302,
+      "source_mp3_t1": 210.142,
+      "t0": 95.672336,
+      "t1": 107.511792,
+      "duration": 11.839456,
+      "narration_text": "Cháu nội của Cyrus là Hoàng đế Xerxes đã dẫn một đội quân khổng lồ tiến đánh Hy Lạp. Và tại một hẻm núi hẹp tên là Thermopylae, quân Ba Tư đã đụng độ một nhóm nhỏ chiến binh Sparta."
+    }
+  ]
+}

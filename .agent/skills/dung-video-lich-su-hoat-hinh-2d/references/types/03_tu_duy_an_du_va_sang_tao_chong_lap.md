@@ -21,3 +21,29 @@
 
 - **✅ Ví dụ Đúng (Đạt chuẩn):** Chuỗi 5 nhịp liên tiếp có cấu trúc luân phiên: `[T08 Bác bỏ ngộ nhận] -> [T02 Ba thẻ bài] -> [T03 Sập cửa ngục] -> [T01 Chia đôi 1970 vs Nay] -> [T04 Đế chế Cyrus]`, mỗi nhịp có đạo cụ riêng và góc máy thở đều đặn.
 - **❌ Ví dụ Sai (Bị cấm):** Cả 10 nhịp trong Hồi 2 đều vẽ nhân vật Hoodie đỏ đứng góc trái chỉ tay vào 3 hộp chữ ở giữa màn hình.
+
+---
+
+## Mục 3. Cơ Chế Lắp Ghép 7 Viên Gạch Nguyên Tử (`custom_scene_graph` & `ATOMIC_*`) Cho Tình Huống Hoàn Toàn Mới Ở Tập 2, 3, N (Tuyệt Đối Không Cần Sửa Code Python)
+
+Khi sang Tập 2, Tập 3, Tập N gặp các sự kiện lịch sử hoàn toàn mới lạ chưa từng có trong 13 khuôn mẫu cố định (ví dụ: *Con ngựa gỗ thành Troy*, *Vụ ám sát Caesar tại Viện Nguyên lão*, *Sàn chứng khoán Phố Wall sụp đổ 1929*, hay *Hiệp ước chia đôi bán đảo Triều Tiên*), AI **tuyệt đối không sửa code Python** mà sử dụng `scene_template: "CUSTOM_METAPHOR_STAGE"` kết hợp **7 Viên Gạch Nguyên Tử** có sẵn trong `ziro_stage_components.py`:
+
+| STT | Viên Gạch Nguyên Tử (`action_type` trong `sub_triggers_bt` hoặc `custom_scene_graph`) | Tham số điều khiển trực tiếp trong JSON | Cách AI ứng dụng cho tình huống mới lạ (Kết hợp `image-generator` trong `tu_lieu_tap/`) |
+| :--- | :--- | :--- | :--- |
+| **1** | **Nền & Bản đồ Đa giác (`ATOMIC_BG_IMAGE` / `MAP_ARROWS_4_EMPIRES`)** | `photo_file`, `darken_factor`, `polygon_pts`, `map_title`, `map_title_xy`, `arrows_list` | Khoanh sáng bất kỳ quốc gia/vùng lãnh thổ nào trên ảnh vệ tinh bằng mảng tọa độ `polygon_pts` và vẽ các mũi tên địa chính trị bằng `arrows_list` ngay trong JSON. |
+| **2** | **Đạo cụ 2D & Ảnh Tư liệu Động (`ATOMIC_PROP_CARD` / `ATOMIC_CUTOUT_PROP`)** | `photo_file`, `x`, `y`, `w`, `h`, `anim_style` (`pop`, `slide_left`, `slide_right`, `slam_drop`), `label`, `sub_label` | Với vật thể đặc thù chưa có trong code (Ngựa gỗ Troy, Máy chém, Bình gốm, Xe tăng...), AI gọi `image-generator` vẽ ảnh 2D Ziro lưu vào `tu_lieu_tap/` rồi điều khiển nó trượt/rơi/nảy vào sân khấu tại đúng giây `bt`. |
+| **3** | **Đội hình Nhân vật Tự do (`ATOMIC_ACTOR` / `characters[]`)** | `role`, `x`, `y`, `scale`, `emotion`, `left_arm`, `right_arm`, `prop_right`, `label` | Đặt nhiều nhân vật lịch sử ở bất kỳ tọa độ nào, đổi trang phục, biểu cảm (`shocked`, `angry`, `smug`) và tay cầm đạo cụ theo từng nhịp. |
+| **4** | **Mũi tên Chỉ hướng (`ATOMIC_VECTOR_ARROW`)** | `arr_start: [x1,y1]`, `arr_end: [x2,y2]`, `arch`, `txt_pos: [tx,ty]`, `label` | Vẽ mũi tên cong nối giữa 2 nhân vật, 2 đạo cụ hoặc 2 vị trí bản đồ với tọa độ chữ `txt_pos` tách rời hoàn toàn khỏi gốc mũi tên. |
+| **5** | **Hiệu ứng Hình học Tác động (`ATOMIC_VECTOR_SHAPE`)** | `shape` (`jail_bars`, `red_cross`, `split_line`, `radar_pin`), `x`, `y`, `p1`, `p2`, `color`, `label` | Vẽ đường cắt đôi lãnh thổ (`split_line`), gạch chéo bác bỏ (`red_cross`), song sắt sập xuống (`jail_bars`) hoặc điểm nóng nhấp nháy (`radar_pin`). |
+| **6** | **Chữ Động Không Khung & Con Dấu (`ATOMIC_KINETIC_TEXT`)** | `x`, `y`, `size`, `color`, `bold`, `organic`, `is_stamp` (`true`/`false`), `label` | Đặt chữ trần gõ máy/nảy chữ hoặc con dấu đóng mộc (`is_stamp: true`, `<10%` tổng chữ) tại bất kỳ tọa độ nào khớp giây phát âm `bt`. |
+| **7** | **Khối Lắp Ghép Tổng Hợp (`custom_scene_graph`)** | `props_and_images[]`, `vector_overlays[]`, `actors[]`, `kinetic_texts[]` | Khai báo trọn bộ sân khấu đa lớp ngay trong đối tượng `custom_scene_graph` của nhịp đó mà không cần viết thêm bất kỳ nhánh `elif` nào trong Python. |
+
+---
+
+## Mục 4. Giao Thức "Đọc Hiểu & Báo Cáo Đề Án Đạo Diễn Ở Khung Chat (`Director's Pitch Gate`)" Khi Bắt Đầu Tập Mới / Cụm Mới
+
+Trước khi tạo JSON hoặc chạy render cho bất kỳ Tập mới hay Cụm mới nào, AI bắt buộc phải đọc kịch bản + kiểm tra kho ảnh `tu_lieu_tap/` và **trình bày Báo cáo Đề án Đạo diễn ở khung chat** gồm 4 phần để Người dùng duyệt:
+1. **Tóm tắt Đọc hiểu Nội dung & Cấu trúc Thời lượng:** Ý nghĩa lịch sử cốt lõi, nghịch lý trung tâm của Tập/Cụm và thời lượng khớp `voice.MP3`.
+2. **Bảng Phương Án Đạo Diễn Hình Ảnh Từng Nhịp (`Storyboard Pitch Table`):** Cột `Nhịp & Giây` | `Lời dẫn` | `Ý tưởng Ẩn dụ & Hành động trên sân khấu` | `Khuôn mẫu (T01..S05) hoặc Lắp ghép Nguyên tử (ATOMIC_*)`.
+3. **Danh mục Tư liệu & Đạo cụ 2D (`Asset Checklist`):** Ảnh nào đã có sẵn trong `tu_lieu_tap/`, đạo cụ 2D đặc thù nào AI sẽ tự vẽ thêm bằng `image-generator`.
+4. **Cổng Xin Lệnh Duyệt:** Chờ người dùng gõ **`"DUYỆT"`** ở khung chat rồi mới chạy tự động một mạch `Bước 2 -> Bước 3 -> Bước 4`.

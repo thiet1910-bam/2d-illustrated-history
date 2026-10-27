@@ -1,0 +1,12 @@
+{
+  "episode_id": "EP01_Iran",
+  "cluster_id": "cum_02_Hoi_II_seg_2_1_2_2",
+  "beats_total": 11,
+  "cache_hits": 3,
+  "cache_misses": 8,
+  "total_elapsed_sec": 63.199,
+  "voice_wav_duration_sec": 107.5118,
+  "video_mp4_duration_sec": 107.5,
+  "av_sync_drift_sec": 0.0118,
+  "output_mp4": "E:\\02_CHANNEL\\thu-nghiem\\edit-video\\2D-Illustrated-History\\Du-an-2D-Illustrated-History\\dung-video-lich-su-hoat-hinh-2d\\3_output\\EP01_Iran\\1_video_cac_cum\\cum_02_Hoi_II_seg_2_1_2_2.mp4"
+}

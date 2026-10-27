@@ -119,8 +119,43 @@
                 "label": { "type": "string" },
                 "sub_label": { "type": "string" },
                 "photo_file": { "type": "string" },
-                "x_offset": { "type": "number" }
+                "x_offset": { "type": "number" },
+                "x": { "type": "number" },
+                "y": { "type": "number" },
+                "w": { "type": "number" },
+                "h": { "type": "number" },
+                "anim_style": { "type": "string", "enum": ["pop", "slide_left", "slide_right", "slam_drop"] },
+                "polygon_pts": { "type": "array" },
+                "arrows_list": { "type": "array" },
+                "arr_start": { "type": "array" },
+                "arr_end": { "type": "array" },
+                "txt_pos": { "type": "array" },
+                "shape": { "type": "string", "enum": ["jail_bars", "red_cross", "split_line", "radar_pin"] },
+                "is_stamp": { "type": "boolean" }
               }
+            }
+          },
+          "custom_scene_graph": {
+            "type": "object",
+            "description": "Bộ lắp ghép Sân khấu Skit 2 Nhân vật (skit_stage_bg, skit_speech_captions) & 7 Viên Gạch Nguyên Tử + 5 Đường Nét Chuyển Động tự do",
+            "properties": {
+              "hide_default_chars": { "type": "boolean" },
+              "skit_stage_bg": {
+                "type": "string",
+                "enum": [
+                  "PERSIAN_COMMAND_TENT",
+                  "THERMOPYLAE_MAP_DESK",
+                  "SPARTAN_STAGE_SPOTLIGHT",
+                  "GREEK_HISTORIAN_STUDY",
+                  "HOLLYWOOD_VS_REALITY_STAGE",
+                  "PERSIAN_TENT_TO_MODERN_CINEMA"
+                ]
+              },
+              "props_and_images": { "type": "array" },
+              "vector_overlays": { "type": "array" },
+              "actors": { "type": "array" },
+              "skit_speech_captions": { "type": "array" },
+              "kinetic_texts": { "type": "array" }
             }
           },
           "sfx_events": {
@@ -139,7 +174,15 @@
                     "stamp_slam.wav",
                     "jail_bar_clang.wav",
                     "typewriter_tick.wav",
-                    "sword_clash.wav"
+                    "sword_clash.wav",
+                    "ziro_pop_soft.wav",
+                    "ziro_light_off_thud.wav",
+                    "ziro_padlock_slam.wav",
+                    "ziro_scroll_unroll.wav",
+                    "ziro_icon_pop_rapid.wav",
+                    "ziro_rubber_stamp.wav",
+                    "ziro_spear_drop.wav",
+                    "ziro_poem_unroll.wav"
                   ]
                 },
                 "gain_db": { "type": "number" }

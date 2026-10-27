@@ -15,11 +15,13 @@ import sys
 import json
 import math
 import wave
+import shutil
 import argparse
 from pathlib import Path
 import numpy as np
 
 SR = 44100
+SKILL_ROOT = Path(__file__).resolve().parents[2]
 
 
 def db_to_gain(db: float) -> float:
@@ -62,8 +64,18 @@ def read_wav_stereo_float(path: Path) -> np.ndarray:
 
 
 def ensure_sfx_bgm_library(audio_lib_dir: Path):
-    """Synthesizes physical WAV files for all standard Ziro Foley SFX and BGM tracks if missing."""
+    """Synthesizes physical WAV files for all standard Ziro Foley SFX and BGM tracks if missing,
+    and syncs the 8 authentic Ziro History SFX WAVs from the Skill's self-contained vault."""
     audio_lib_dir.mkdir(parents=True, exist_ok=True)
+    vault_sfx_dir = SKILL_ROOT / "kho_rieng_2d_history_va_opus5_5" / "ziro_authentic_sfx"
+    target_ziro_dir = audio_lib_dir / "ziro_authentic_sfx"
+    if vault_sfx_dir.exists():
+        target_ziro_dir.mkdir(parents=True, exist_ok=True)
+        for wav_f in vault_sfx_dir.glob("*.wav"):
+            dst_f = target_ziro_dir / wav_f.name
+            if not dst_f.exists():
+                shutil.copy2(wav_f, dst_f)
+
     rng = np.random.default_rng(42)
 
     # 1. pop_card.wav (0.22s crisp dual-tone pop)
@@ -208,21 +220,37 @@ def mix_cluster_audio(manifest_path: Path, out_wav_path: Path = None):
     total_samples = len(voice_track)
     mixed_dur_sec = total_samples / float(SR)
 
-    # Layer 2: Foley SFX Track
+    # Layer 2: Foley SFX Track (Calibrated to Ziro History's -26 to -34 dBFS organic Foley floor)
     sfx_track = np.zeros_like(voice_track)
     sfx_verification = []
     cursor_sample = 0
+    ziro_sfx_dir = audio_lib_dir / "ziro_authentic_sfx"
+    ziro_sfx_map = {
+        "pop_card.wav": "ziro_pop_soft.wav",
+        "whoosh_transition.wav": "ziro_scroll_unroll.wav",
+        "stamp_slam.wav": "ziro_rubber_stamp.wav",
+        "typewriter_tick.wav": "ziro_icon_pop_rapid.wav",
+        "sword_clash.wav": "ziro_spear_drop.wav",
+        "jail_bar_clang.wav": "ziro_padlock_slam.wav",
+    }
 
     for b, v_arr in zip(beats, beat_voice_arrays):
         b_len = len(v_arr)
         for ev in b.get("sfx_events", []):
             bt = float(ev.get("bt", 0.0))
             sfx_file = ev.get("sfx_file", "pop_card.wav")
-            gain_db = float(ev.get("gain_db", -6.0))
-            sfx_path = audio_lib_dir / sfx_file
+            gain_db = float(ev.get("gain_db", -14.5))
+            mapped_ziro = ziro_sfx_map.get(sfx_file, sfx_file if sfx_file.startswith("ziro_") else "")
+            if mapped_ziro and (ziro_sfx_dir / mapped_ziro).exists():
+                sfx_path = ziro_sfx_dir / mapped_ziro
+                # Authentic Ziro SFX is already normalized to -14 dBFS peak; apply subtle trim
+                eff_gain_db = min(gain_db + 6.0, -6.5)
+            else:
+                sfx_path = audio_lib_dir / sfx_file
+                eff_gain_db = min(gain_db, -13.5)
             if not sfx_path.exists():
                 continue
-            sfx_arr = read_wav_stereo_float(sfx_path) * db_to_gain(gain_db)
+            sfx_arr = read_wav_stereo_float(sfx_path) * db_to_gain(eff_gain_db)
             s_idx = cursor_sample + max(0, min(b_len - 1, int(round(bt * SR))))
             e_idx = min(total_samples, s_idx + len(sfx_arr))
             seg_len = e_idx - s_idx
@@ -234,20 +262,21 @@ def mix_cluster_audio(manifest_path: Path, out_wav_path: Path = None):
                     "bt_sec": bt,
                     "global_t_sec": round(s_idx / SR, 3),
                     "sfx_file": sfx_file,
-                    "gain_db": gain_db,
+                    "source_wav": sfx_path.name,
+                    "gain_db": round(eff_gain_db, 2),
                     "rms": round(peak_rms, 5),
                 })
         cursor_sample += b_len
 
-    # Layer 3: BGM with Auto-Ducking (-16.0 dB during speech, -9.0 dB during pauses)
+    # Layer 3: BGM with Auto-Ducking (-20.0 dB during speech, -12.5 dB during pauses)
     repeats = int(math.ceil(total_samples / max(1, len(bgm_loop)))) + 1
     bgm_raw = np.tile(bgm_loop, (repeats, 1))[:total_samples]
 
     # Compute smoothed speech envelope in 50ms chunks
     win = int(0.05 * SR)
     n_wins = int(math.ceil(total_samples / win))
-    duck_gain_active = db_to_gain(-16.0)
-    duck_gain_pause = db_to_gain(-9.0)
+    duck_gain_active = db_to_gain(-20.0)
+    duck_gain_pause = db_to_gain(-12.5)
     win_gains = np.empty(n_wins, dtype=np.float32)
 
     for w_i in range(n_wins):

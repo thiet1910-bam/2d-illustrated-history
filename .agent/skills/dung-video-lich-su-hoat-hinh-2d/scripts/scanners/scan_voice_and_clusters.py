@@ -421,9 +421,12 @@ def align_and_slice_cluster_audio(
     beats_meta = split_paragraph_into_beats(cluster_info["lines"])
     num_beats = len(beats_meta)
 
-    # Bước A: Trích xuất đoạn WAV thô từ `voice.MP3` (lấy dư +25s biên an toàn để Whisper tìm đúng điểm kết thúc Cụm)
-    search_t0 = max(0.0, cluster_info["est_t0"] - (5.0 if cluster_info["order_index"] > 1 else 0.0))
-    search_dur = (cluster_info["est_t1"] - search_t0) + 35.0
+    # Bước A: Trích xuất đoạn WAV thô từ `voice.MP3` (ưu tiên nối khít 0.000s từ điểm kết thúc thực tế của Cụm liền trước)
+    if "exact_prev_t1" in cluster_info and cluster_info["exact_prev_t1"] is not None:
+        search_t0 = float(cluster_info["exact_prev_t1"])
+    else:
+        search_t0 = max(0.0, cluster_info["est_t0"] - (5.0 if cluster_info["order_index"] > 1 else 0.0))
+    search_dur = max(cluster_info["est_duration"] + 35.0, (cluster_info["est_t1"] - search_t0) + 35.0)
     raw_window_wav = cluster_dir / "_temp_window_44k.wav"
     cluster_dir.mkdir(parents=True, exist_ok=True)
 
@@ -812,6 +815,13 @@ def main():
             print(f"❌ [FAIL] Không tìm thấy mã cụm `{target_cluster_id}` trong danh sách: {[c['cluster_id'] for c in clusters]}")
             sys.exit(1)
         c_target = matched[0]
+        if c_target["order_index"] > 1:
+            prev_c = clusters[c_target["order_index"] - 2]
+            prev_tl_path = cac_cum_dir / prev_c["cluster_id"] / f"voice_timeline_{prev_c['cluster_id']}.json"
+            if prev_tl_path.exists():
+                prev_tl = json.loads(prev_tl_path.read_text(encoding="utf-8"))
+                if prev_tl.get("beats"):
+                    c_target["exact_prev_t1"] = prev_tl["beats"][-1]["source_mp3_t1"]
         print("-" * 72)
         print(f"✂️ ĐANG CẮT GÓI ÂM THANH `0.000s` TỪ `voice.MP3` CHO CỤM: `{target_cluster_id}`...")
         c_dir = cac_cum_dir / target_cluster_id

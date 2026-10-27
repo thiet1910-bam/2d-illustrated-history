@@ -12,9 +12,14 @@
 *.zip
 *.ZIP
 
-# Thư mục lưu trữ nháp Prototype lịch sử & bộ nhớ đệm Beat MP4 trung gian
+# Ngoại lệ: Giữ lại bộ 8 file SFX gốc của Ziro History (~50-95KB/file) trong Kho tự chủ của Skill
+!**/ziro_authentic_sfx/*.wav
+!**/ziro_authentic_sfx/*.WAV
+
+# Thư mục lưu trữ nháp Prototype lịch sử & bộ nhớ đệm Beat MP4 / Frame trung gian
 Du-an-2D-Illustrated-History/99_LUU_TRU_PROTOTYPE/
 **/cache_beats/
+**/_frames_*/
 
 # Hệ thống & Cache Python
 __pycache__/

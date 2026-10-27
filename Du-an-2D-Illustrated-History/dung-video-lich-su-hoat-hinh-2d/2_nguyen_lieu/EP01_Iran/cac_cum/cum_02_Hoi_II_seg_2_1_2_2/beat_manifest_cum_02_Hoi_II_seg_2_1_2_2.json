@@ -1,0 +1,930 @@
+{
+  "episode_id": "EP01_Iran",
+  "act_id": "HỒI II",
+  "cluster_id": "cum_02_Hoi_II_seg_2_1_2_2",
+  "cluster_type": "HOI_PHAN_TICH",
+  "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh | Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+  "bgm_track": "bgm_tense_history.wav",
+  "total_duration_sec": 107.511792,
+  "beats": [
+    {
+      "beat_id": "beat_01",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_01.wav",
+      "source_mp3_t0": 102.63,
+      "source_mp3_t1": 107.672,
+      "t0": 0.0,
+      "t1": 5.042063,
+      "duration": 5.042063,
+      "narration_text": "Trước khi có tên là Iran, vùng đất này được thế giới biết đến với cái tên: Ba Tư.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "CUSTOM_METAPHOR_STAGE",
+      "hud_banner": {
+        "text": "HỒI II: MÃ GEN ĐẾ CHẾ BA TƯ",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.08,
+        "pan_x_start": 0,
+        "pan_x_end": 20,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 260,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.25,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 740,
+          "y": 400,
+          "size": 44,
+          "color": [42, 92, 168],
+          "bold": true,
+          "organic": false,
+          "label": "TRƯỚC KHI MANG TÊN: I R A N"
+        },
+        {
+          "bt": 1.85,
+          "action_type": "ATOMIC_VECTOR_ARROW",
+          "arr_start": [740, 455],
+          "arr_end": [1160, 575],
+          "arch": -24.0,
+          "txt_pos": [1040, 445],
+          "size": 26,
+          "color": [60, 60, 60],
+          "label": "2.500 NĂM LỊCH SỬ"
+        },
+        {
+          "bt": 2.95,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1240,
+          "y": 640,
+          "size": 52,
+          "color": [198, 36, 36],
+          "bold": true,
+          "organic": true,
+          "label": "ĐẾ CHẾ BA TƯ (PERSIA)"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.25, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 1.85, "sfx_file": "whoosh_transition.wav", "gain_db": -11.0 },
+        { "bt": 2.95, "sfx_file": "stamp_slam.wav", "gain_db": -9.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_02",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_02.wav",
+      "source_mp3_t0": 107.672,
+      "source_mp3_t1": 115.202,
+      "t0": 5.042063,
+      "t1": 12.572108,
+      "duration": 7.530045,
+      "narration_text": "Và 2.500 năm trước, Ba Tư không phải là một kẻ yếu thế bị chà đạp. Nó là siêu cường đầu tiên của lịch sử nhân loại.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T08_Fact_vs_Myth_Strike",
+      "hud_banner": {
+        "text": "2.500 NĂM TRƯỚC: SIÊU CƯỜNG ĐẦU TIÊN",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.12,
+        "pan_x_start": 0,
+        "pan_x_end": 35,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 240,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.3,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 660,
+          "y": 465,
+          "size": 34,
+          "color": [80, 80, 80],
+          "bold": true,
+          "label": "KẺ YẾU THẾ BỊ CHÀ ĐẠP?"
+        },
+        {
+          "bt": 1.65,
+          "action_type": "ATOMIC_VECTOR_SHAPE",
+          "shape": "red_cross",
+          "x": 660,
+          "y": 465,
+          "radius": 90,
+          "color": [205, 32, 32],
+          "label": ""
+        },
+        {
+          "bt": 1.75,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 660,
+          "y": 315,
+          "size": 36,
+          "color": [205, 32, 32],
+          "bold": true,
+          "label": "HOÀN TOÀN KHÔNG!"
+        },
+        {
+          "bt": 3.55,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "04_beat02_cyrus_superpower_throne_ziro.png",
+          "x": 1330,
+          "y": 535,
+          "w": 500,
+          "h": 340,
+          "anim_style": "pop",
+          "badge_col": [198, 42, 42],
+          "label": "ĐẾ CHẾ BA TƯ — 550 TCN",
+          "sub_label": "Siêu cường đầu tiên của lịch sử nhân loại"
+        },
+        {
+          "bt": 5.1,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1330,
+          "y": 245,
+          "size": 28,
+          "color": [198, 36, 36],
+          "is_stamp": true,
+          "label": "SIÊU CƯỜNG ĐẦU TIÊN!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.3, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 1.65, "sfx_file": "stamp_slam.wav", "gain_db": -9.5 },
+        { "bt": 3.55, "sfx_file": "whoosh_transition.wav", "gain_db": -10.0 },
+        { "bt": 5.1, "sfx_file": "stamp_slam.wav", "gain_db": -9.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_03",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_03.wav",
+      "source_mp3_t0": 115.202,
+      "source_mp3_t1": 130.497,
+      "t0": 12.572108,
+      "t1": 27.866734,
+      "duration": 15.294626,
+      "narration_text": "Năm 550 trước Công nguyên, một vị vua tên là Cyrus Đại đế đã thống nhất các bộ lạc Ba Tư và chinh phục gần như toàn bộ thế giới văn minh lúc bấy giờ—từ bờ biển Hy Lạp cho đến tận biên giới Ấn Độ. Gần một nửa dân số loài người trên Trái đất lúc đó sống dưới sự cai trị của ông.",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "T06_Geopolitics_Map_Spotlight",
+      "hud_banner": {
+        "text": "550 TCN: ĐẾ CHẾ CỦA CYRUS ĐẠI ĐẾ",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.14,
+        "pan_x_start": 0,
+        "pan_x_end": 40,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 220,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.1,
+          "action_type": "MAP_ARROWS_4_EMPIRES",
+          "photo_file": "01_beat01_0108s-0125s_satellite_ancient_persia.jpg",
+          "darken_factor": 0.58,
+          "map_title": "ĐẾ CHẾ BA TƯ (550 TCN)",
+          "map_title_xy": [1190, 560],
+          "polygon_pts": [
+            [740, 390], [980, 360], [1340, 380], [1660, 490],
+            [1620, 720], [1260, 770], [920, 690], [710, 540]
+          ],
+          "arrows_list": [
+            {
+              "txt_pos": [540, 330],
+              "arr_start": [980, 470],
+              "arr_end": [745, 420],
+              "arch": -18,
+              "label": "PHÍA TÂY: BỜ BIỂN HY LẠP"
+            },
+            {
+              "txt_pos": [1620, 360],
+              "arr_start": [1320, 510],
+              "arr_end": [1630, 520],
+              "arch": 18,
+              "label": "PHÍA ĐÔNG: BIÊN GIỚI ẤN ĐỘ"
+            }
+          ],
+          "label": "ĐẾ CHẾ BA TƯ (550 TCN)"
+        },
+        {
+          "bt": 9.8,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1150,
+          "y": 845,
+          "size": 40,
+          "color": [255, 225, 75],
+          "stroke": true,
+          "stroke_w": 4,
+          "bold": true,
+          "organic": false,
+          "label": "CAI TRỊ ~50% DÂN SỐ LOÀI NGƯỜI!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.2, "sfx_file": "whoosh_transition.wav", "gain_db": -10.0 },
+        { "bt": 5.5, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 9.8, "sfx_file": "stamp_slam.wav", "gain_db": -9.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_04",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_04.wav",
+      "source_mp3_t0": 130.497,
+      "source_mp3_t1": 133.972,
+      "t0": 27.866734,
+      "t1": 31.341995,
+      "duration": 3.475261,
+      "narration_text": "Nhưng cách Cyrus cai trị mới là điều làm nên lịch sử.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T05_Data_Chart_Scale",
+      "hud_banner": {
+        "text": "BÍ MẬT ĐẾ CHẾ: NGHỆ THUẬT CAI TRỊ",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.08,
+        "zoom_end": 1.0,
+        "pan_x_start": 20,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 310,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.2,
+          "action_type": "ATOMIC_ACTOR",
+          "role": "char_cyrus_king",
+          "x": 1060,
+          "y": 720,
+          "scale": 1.08,
+          "emotion": "explaining",
+          "left_arm": "up",
+          "right_arm": "point_right",
+          "label": "CYRUS ĐẠI ĐẾ"
+        },
+        {
+          "bt": 0.85,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1060,
+          "y": 295,
+          "size": 46,
+          "color": [198, 36, 36],
+          "bold": true,
+          "organic": true,
+          "label": "CÁCH CAI TRỊ LÀM NÊN LỊCH SỬ!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.2, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 0.85, "sfx_file": "stamp_slam.wav", "gain_db": -9.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_05",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_05.wav",
+      "source_mp3_t0": 133.972,
+      "source_mp3_t1": 155.082,
+      "t0": 31.341995,
+      "t1": 52.452358,
+      "duration": 21.110363,
+      "narration_text": "Trong thế giới cổ đại, khi một vị vua chiếm được thành phố của bạn, quy trình thông thường là đốt sạch đền đài, giết đàn ông và bắt phụ nữ làm nô lệ. Cyrus làm điều ngược lại. Khi chiếm được Babylon, ông giải phóng những người nô lệ Do Thái và trả tiền để họ về xây lại đền thờ. Ông cho phép mọi dân tộc giữ nguyên tôn giáo, ngôn ngữ và phong tục của mình.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T01_Split_World_Contrast",
+      "hud_banner": {
+        "text": "VUA CỔ ĐẠI THÔNG THƯỜNG vs CYRUS ĐẠI ĐẾ",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.11,
+        "pan_x_start": -20,
+        "pan_x_end": 45,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 210,
+          "y": 730,
+          "scale": 0.95,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.4,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 650,
+          "y": 255,
+          "size": 34,
+          "color": [185, 32, 32],
+          "bold": true,
+          "label": "QUY TRÌNH BẠO CHÚA CỔ ĐẠI:"
+        },
+        {
+          "bt": 3.2,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 650,
+          "y": 355,
+          "size": 28,
+          "color": [40, 40, 40],
+          "bold": true,
+          "label": "[-] Đốt sạch đền đài • Giết chóc • Bắt nô lệ"
+        },
+        {
+          "bt": 7.6,
+          "action_type": "ATOMIC_VECTOR_SHAPE",
+          "shape": "red_cross",
+          "x": 650,
+          "y": 355,
+          "radius": 85,
+          "color": [205, 32, 32],
+          "label": ""
+        },
+        {
+          "bt": 7.75,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 650,
+          "y": 495,
+          "size": 36,
+          "color": [205, 32, 32],
+          "bold": true,
+          "label": "CYRUS LÀM NGƯỢC LẠI!"
+        },
+        {
+          "bt": 9.2,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "05_beat05_babylon_liberation_vs_tyrant_ziro.png",
+          "x": 1330,
+          "y": 485,
+          "w": 550,
+          "h": 350,
+          "anim_style": "slide_right",
+          "badge_col": [42, 142, 78],
+          "label": "BABYLON — 539 TCN",
+          "sub_label": "Giải phóng nô lệ & trả vàng xây lại đền thờ"
+        },
+        {
+          "bt": 15.2,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1330,
+          "y": 755,
+          "size": 30,
+          "color": [28, 128, 68],
+          "bold": true,
+          "label": "[+] Tự do Tôn giáo • Ngôn ngữ • Phong tục"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.4, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 7.6, "sfx_file": "stamp_slam.wav", "gain_db": -9.5 },
+        { "bt": 9.2, "sfx_file": "whoosh_transition.wav", "gain_db": -10.0 },
+        { "bt": 15.2, "sfx_file": "pop_card.wav", "gain_db": -10.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_06",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_06.wav",
+      "source_mp3_t0": 155.082,
+      "source_mp3_t1": 166.367,
+      "t0": 52.452358,
+      "t1": 63.737347,
+      "duration": 11.284989,
+      "narration_text": "Ông cho khắc những quy tắc đó lên một khối đất sét hình bầu dục, to bằng quả bóng bầu dục. Các nhà sử học ngày nay gọi nó là \"Khối trụ Cyrus\"—bản tuyên ngôn nhân quyền đầu tiên của nhân loại.",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "T04_Empire_Parade",
+      "hud_banner": {
+        "text": "KHỐI TRỤ CYRUS: TUYÊN NGÔN NHÂN QUYỀN ĐẦU TIÊN",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.15,
+        "pan_x_start": 0,
+        "pan_x_end": 30,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 250,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.3,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "02_beat04_0145s-0168s_cyrus_cylinder_british_museum.jpg",
+          "x": 1060,
+          "y": 515,
+          "w": 560,
+          "h": 340,
+          "anim_style": "pop",
+          "badge_col": [168, 112, 42],
+          "label": "Bảo tàng Anh, London",
+          "sub_label": "Khối trụ Cyrus bằng đất sét nung (539 TCN)"
+        },
+        {
+          "bt": 4.8,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1060,
+          "y": 240,
+          "size": 42,
+          "color": [142, 32, 32],
+          "bold": true,
+          "organic": false,
+          "label": "\"KHỐI TRỤ CYRUS\""
+        },
+        {
+          "bt": 7.2,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1060,
+          "y": 775,
+          "size": 36,
+          "color": [198, 32, 32],
+          "bold": true,
+          "organic": true,
+          "label": "BẢN TUYÊN NGÔN NHÂN QUYỀN ĐẦU TIÊN CỦA NHÂN LOẠI!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.3, "sfx_file": "pop_card.wav", "gain_db": -9.5 },
+        { "bt": 4.8, "sfx_file": "typewriter_tick.wav", "gain_db": -11.0 },
+        { "bt": 7.2, "sfx_file": "stamp_slam.wav", "gain_db": -9.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_07",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_07.wav",
+      "source_mp3_t0": 166.367,
+      "source_mp3_t1": 170.287,
+      "t0": 63.737347,
+      "t1": 67.657075,
+      "duration": 3.919728,
+      "narration_text": "Người Iran ngày nay vẫn vô cùng tự hào về cái ống đất sét đó.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "CUSTOM_METAPHOR_STAGE",
+      "hud_banner": {
+        "text": "BIỂU TƯỢNG TỰ HÀO DÂN TỘC IRAN",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.08,
+        "zoom_end": 1.0,
+        "pan_x_start": 20,
+        "pan_x_end": 0,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 280,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.15,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "02_beat04_0145s-0168s_cyrus_cylinder_british_museum.jpg",
+          "x": 1120,
+          "y": 520,
+          "w": 520,
+          "h": 330,
+          "anim_style": "pop",
+          "badge_col": [42, 142, 78],
+          "label": "Di sản 2.500 năm",
+          "sub_label": "Niềm tự hào văn minh của người Iran hiện đại"
+        },
+        {
+          "bt": 1.2,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1120,
+          "y": 240,
+          "size": 40,
+          "color": [28, 128, 68],
+          "bold": true,
+          "organic": true,
+          "label": "NIỀM TỰ HÀO SUỐT 25 THẾ KỶ!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.15, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 1.2, "sfx_file": "whoosh_transition.wav", "gain_db": -11.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_08",
+      "segment_id": "2.1",
+      "author_visual_note": "Bản đồ thế giới cổ đại mở rộng, tượng Cyrus Đại đế, cận cảnh Khối trụ Cyrus bằng đất sét tại Bảo tàng Anh",
+      "wav_file": "beats_wav/beat_08.wav",
+      "source_mp3_t0": 170.287,
+      "source_mp3_t1": 184.947,
+      "t0": 67.657075,
+      "t1": 82.316962,
+      "duration": 14.659887,
+      "narration_text": "Và hãy nhớ kỹ hình dáng của nó. Bởi vì 2.500 năm sau, một vị vua hiện đại của Iran sẽ mang chính cái ống đất sét này ra để tổ chức bữa tiệc xa hoa, điên rồ nhất thế kỷ 20... ngay trước khi ngai vàng của ông ta sụp đổ.",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "T01_Split_World_Contrast",
+      "hud_banner": {
+        "text": "539 TCN vs ĐẠI TIỆC XA HOA 1971",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.14,
+        "pan_x_start": 0,
+        "pan_x_end": 45,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 210,
+          "y": 730,
+          "scale": 0.95,
+          "emotion": "shocked",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.25,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "02_beat04_0145s-0168s_cyrus_cylinder_british_museum.jpg",
+          "x": 580,
+          "y": 520,
+          "w": 390,
+          "h": 270,
+          "anim_style": "pop",
+          "badge_col": [168, 112, 42],
+          "label": "539 TCN",
+          "sub_label": "Khối trụ Cyrus gốc"
+        },
+        {
+          "bt": 2.8,
+          "action_type": "ATOMIC_VECTOR_ARROW",
+          "arr_start": [810, 500],
+          "arr_end": [1130, 500],
+          "arch": -22.0,
+          "txt_pos": [970, 415],
+          "size": 25,
+          "color": [185, 32, 32],
+          "label": "2.500 NĂM SAU (1971)"
+        },
+        {
+          "bt": 4.9,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "06_beat08_shah_1971_persepolis_tent_party_ziro.png",
+          "x": 1430,
+          "y": 520,
+          "w": 480,
+          "h": 320,
+          "anim_style": "slide_right",
+          "badge_col": [198, 42, 42],
+          "label": "Persepolis, 1971",
+          "sub_label": "Bữa tiệc xa hoa điên rồ nhất thế kỷ 20"
+        },
+        {
+          "bt": 11.2,
+          "action_type": "ATOMIC_VECTOR_SHAPE",
+          "shape": "red_cross",
+          "x": 1430,
+          "y": 520,
+          "radius": 115,
+          "color": [205, 32, 32],
+          "label": ""
+        },
+        {
+          "bt": 11.3,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1430,
+          "y": 245,
+          "size": 34,
+          "color": [205, 32, 32],
+          "bold": true,
+          "label": "NGAI VÀNG SỤP ĐỔ!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.25, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 2.8, "sfx_file": "whoosh_transition.wav", "gain_db": -10.5 },
+        { "bt": 4.9, "sfx_file": "pop_card.wav", "gain_db": -9.5 },
+        { "bt": 11.2, "sfx_file": "stamp_slam.wav", "gain_db": -8.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_09",
+      "segment_id": "2.2",
+      "author_visual_note": "Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+      "wav_file": "beats_wav/beat_09.wav",
+      "source_mp3_t0": 184.947,
+      "source_mp3_t1": 192.907,
+      "t0": 82.316962,
+      "t1": 90.277166,
+      "duration": 7.960204,
+      "narration_text": "Nhưng nếu đế chế Ba Tư cổ đại văn minh và khoan dung như vậy... tại sao mỗi khi xem phim phương Tây, họ lại trông giống như những con quái vật?",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "T08_Fact_vs_Myth_Strike",
+      "hud_banner": {
+        "text": "LỊCH SỬ THẬT vs ĐIỆN ẢNH PHƯƠNG TÂY",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.13,
+        "pan_x_start": 0,
+        "pan_x_end": 35,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 220,
+          "y": 730,
+          "scale": 0.95,
+          "emotion": "shocked",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.25,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "03_beat08_0190s-0218s_persepolis_relief_architecture.jpg",
+          "x": 680,
+          "y": 515,
+          "w": 470,
+          "h": 330,
+          "anim_style": "pop",
+          "badge_col": [42, 142, 78],
+          "label": "Kinh đô Persepolis",
+          "sub_label": "Đế chế văn minh & khoan dung"
+        },
+        {
+          "bt": 3.85,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "07_beat09_11_hollywood_monster_vs_thermopylae_ziro.png",
+          "x": 1380,
+          "y": 515,
+          "w": 470,
+          "h": 330,
+          "anim_style": "slide_right",
+          "badge_col": [198, 42, 42],
+          "label": "Phim ảnh Phương Tây",
+          "sub_label": "Tại sao lại bị vẽ như quái vật?!"
+        },
+        {
+          "bt": 5.6,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1030,
+          "y": 235,
+          "size": 38,
+          "color": [198, 32, 32],
+          "bold": true,
+          "organic": true,
+          "label": "TẠI SAO LÊN PHIM LẠI THÀNH QUÁI VẬT?!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.25, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 3.85, "sfx_file": "whoosh_transition.wav", "gain_db": -10.0 },
+        { "bt": 5.6, "sfx_file": "stamp_slam.wav", "gain_db": -9.5 }
+      ]
+    },
+    {
+      "beat_id": "beat_10",
+      "segment_id": "2.2",
+      "author_visual_note": "Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+      "wav_file": "beats_wav/beat_10.wav",
+      "source_mp3_t0": 192.907,
+      "source_mp3_t1": 198.302,
+      "t0": 90.277166,
+      "t1": 95.672336,
+      "duration": 5.39517,
+      "narration_text": "Câu trả lời nằm ở cuộc chiến nổi tiếng với người Hy Lạp vào năm 480 trước Công nguyên.",
+      "lighting_mode": "SAND_EMPIRE",
+      "scene_template": "T06_Geopolitics_Map_Spotlight",
+      "hud_banner": {
+        "text": "480 TCN: ĐẠI CHIẾN BA TƯ – HY LẠP",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.12,
+        "pan_x_start": 0,
+        "pan_x_end": -35,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 240,
+          "y": 720,
+          "scale": 1.0,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.1,
+          "action_type": "MAP_ARROWS_4_EMPIRES",
+          "photo_file": "01_beat01_0108s-0125s_satellite_ancient_persia.jpg",
+          "darken_factor": 0.60,
+          "map_title": "ĐẾ CHẾ BA TƯ",
+          "map_title_xy": [1190, 560],
+          "polygon_pts": [
+            [820, 395], [1050, 385], [1340, 430], [1435, 725],
+            [1180, 755], [960, 620], [800, 490]
+          ],
+          "arrows_list": [
+            {
+              "txt_pos": [610, 290],
+              "arr_start": [940, 455],
+              "arr_end": [720, 405],
+              "arch": -22,
+              "label": "TIẾN ĐÁNH HY LẠP (480 TCN)"
+            }
+          ],
+          "label": "ĐẠI CHIẾN BA TƯ - HY LẠP"
+        },
+        {
+          "bt": 2.4,
+          "action_type": "ATOMIC_VECTOR_SHAPE",
+          "shape": "radar_pin",
+          "x": 705,
+          "y": 405,
+          "color": [255, 225, 75],
+          "size": 34,
+          "label": "HY LẠP — 480 TCN"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.2, "sfx_file": "whoosh_transition.wav", "gain_db": -10.0 },
+        { "bt": 2.4, "sfx_file": "sword_clash.wav", "gain_db": -9.0 }
+      ]
+    },
+    {
+      "beat_id": "beat_11",
+      "segment_id": "2.2",
+      "author_visual_note": "Cảnh phim \"300\" của Hollywood với những chiến binh Sparta cơ bắp, đối lập với kiến trúc tráng lệ của kinh đô Persepolis",
+      "wav_file": "beats_wav/beat_11.wav",
+      "source_mp3_t0": 198.302,
+      "source_mp3_t1": 210.142,
+      "t0": 95.672336,
+      "t1": 107.511792,
+      "duration": 11.839456,
+      "narration_text": "Cháu nội của Cyrus là Hoàng đế Xerxes đã dẫn một đội quân khổng lồ tiến đánh Hy Lạp. Và tại một hẻm núi hẹp tên là Thermopylae, quân Ba Tư đã đụng độ một nhóm nhỏ chiến binh Sparta.",
+      "lighting_mode": "DAYLIGHT_WARM",
+      "scene_template": "CUSTOM_METAPHOR_STAGE",
+      "hud_banner": {
+        "text": "TRẬN HUYẾT CHIẾN HẺM NÚI THERMOPYLAE",
+        "style": "FRAMELESS_TYPEWRITER",
+        "y_center": 118,
+        "render_pass": "PASS_2_POST_CAMERA"
+      },
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.15,
+        "pan_x_start": 0,
+        "pan_x_end": 35,
+        "viewport_isolation_mode": true
+      },
+      "characters": [
+        {
+          "role": "char_ziro_host",
+          "x": 220,
+          "y": 730,
+          "scale": 0.95,
+          "emotion": "explaining",
+          "neck_insert_px": 35
+        }
+      ],
+      "sub_triggers_bt": [
+        {
+          "bt": 0.3,
+          "action_type": "ATOMIC_ACTOR",
+          "role": "char_xerxes_king",
+          "x": 580,
+          "y": 720,
+          "scale": 1.05,
+          "emotion": "angry",
+          "left_arm": "down",
+          "right_arm": "point_right",
+          "label": "HOÀNG ĐẾ XERXES"
+        },
+        {
+          "bt": 2.6,
+          "action_type": "ATOMIC_PROP_CARD",
+          "photo_file": "07_beat09_11_hollywood_monster_vs_thermopylae_ziro.png",
+          "x": 1240,
+          "y": 525,
+          "w": 600,
+          "h": 350,
+          "anim_style": "pop",
+          "badge_col": [198, 42, 42],
+          "label": "Hẻm núi Thermopylae, 480 TCN",
+          "sub_label": "Đại quân Ba Tư đụng độ nhóm nhỏ chiến binh Sparta"
+        },
+        {
+          "bt": 7.8,
+          "action_type": "ATOMIC_KINETIC_TEXT",
+          "x": 1240,
+          "y": 235,
+          "size": 38,
+          "color": [198, 32, 32],
+          "bold": true,
+          "organic": true,
+          "label": "ĐẠI QUÂN BA TƯ vs CHIẾN BINH SPARTA!"
+        }
+      ],
+      "sfx_events": [
+        { "bt": 0.3, "sfx_file": "pop_card.wav", "gain_db": -10.0 },
+        { "bt": 2.6, "sfx_file": "whoosh_transition.wav", "gain_db": -10.0 },
+        { "bt": 7.8, "sfx_file": "sword_clash.wav", "gain_db": -8.5 }
+      ]
+    }
+  ]
+}

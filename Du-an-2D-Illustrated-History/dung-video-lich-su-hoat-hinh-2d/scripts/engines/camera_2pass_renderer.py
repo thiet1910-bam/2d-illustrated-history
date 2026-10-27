@@ -77,7 +77,7 @@ def render_hud_pass2(img: Image.Image, beat_data: dict, bt: float) -> Image.Imag
     at `y_center >= 115px` with zero metadata badges and zero subtitle boxes.
     """
     hud = beat_data.get("hud_banner", {})
-    title_text = (hud.get("text") or "").strip()
+    title_text = (hud.get("text") or hud.get("main_title") or "").strip()
     style = hud.get("style", "FRAMELESS_TYPEWRITER")
     if not title_text or style == "NONE":
         return img
