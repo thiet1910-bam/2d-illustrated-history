@@ -1,6 +1,6 @@
 # GIẢI PHÁP, CÔNG CỤ HỖ TRỢ & QUY TRÌNH SẢN XUẤT VIDEO `2D-ILLUSTRATED-HISTORY` DÀI 30+ PHÚT (CHỈ TỪ `KỊCH BẢN + VOICE`)
 
-> **Nguyên tắc Báo cáo (Tuân thủ [`GURU.md`](../../GURU.md) — Ray Dalio & Charlie Munger):**
+> **Nguyên tắc Báo cáo (Tuân thủ ``GURU.md`` — Ray Dalio & Charlie Munger):**
 > Không vòng vo, không tô hồng. Cái gì tự động hóa được 100% nói rõ **LÀM ĐƯỢC** và giải thích tại sao; cái gì AI không tự làm 100% được hoặc sẽ bị lỗi khi kéo dài 30 phút nói thẳng **KHÔNG LÀM ĐƯỢC THEO CÁCH CŨ** và chỉ rõ giải pháp kỹ thuật thay thế.
 
 ---

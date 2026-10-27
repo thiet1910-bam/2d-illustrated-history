@@ -86,7 +86,7 @@ def resolve_episode_asset(filename: str, episode_id: str = "EP01_Iran", workspac
     if workspace_root:
         ws = Path(workspace_root)
         search_dirs.append(ws / "2_nguyen_lieu" / episode_id / "tu_lieu_tap")
-    base_proj = Path(r"e:\02_CHANNEL\thu-nghiem\edit-video\2D-Illustrated-History\Du-an-2D-Illustrated-History")
+    base_proj = Path(__file__).resolve().parents[4] / "Du-an-2D-Illustrated-History"
     search_dirs.append(
         base_proj / "dung-video-lich-su-hoat-hinh-2d" / "2_nguyen_lieu" / episode_id / "tu_lieu_tap"
     )
@@ -1845,7 +1845,7 @@ def ensure_brand_ui_assets(workspace_root: Path = None) -> dict:
       4. `stamps/` (`stamp_red_frame.png`, `stamp_green_frame.png`)
     """
     if workspace_root is None:
-        base_proj = Path(r"e:\02_CHANNEL\thu-nghiem\edit-video\2D-Illustrated-History\Du-an-2D-Illustrated-History")
+        base_proj = Path(__file__).resolve().parents[4] / "Du-an-2D-Illustrated-History"
         workspace_root = base_proj / "dung-video-lich-su-hoat-hinh-2d"
     else:
         workspace_root = Path(workspace_root)

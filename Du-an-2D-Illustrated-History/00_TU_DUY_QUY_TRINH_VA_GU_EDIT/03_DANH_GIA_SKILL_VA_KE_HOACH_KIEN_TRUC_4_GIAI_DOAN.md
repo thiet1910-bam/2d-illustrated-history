@@ -1,9 +1,9 @@
 # BÁO CÁO KIỂM TOÁN SKILL HIỆN TẠI & KẾ HOẠCH KIẾN TRÚC DÂY CHUYỀN 4 GIAI ĐOẠN CHO `2D-ILLUSTRATED-HISTORY` (CHUẨN `PLAYBOOK-SKILL-CREATOR` & `9 GURU`)
 
 > **Hệ quy chiếu đánh giá (`[ĐÃ XÁC MINH 100%]`):**
-> 1. **[`playbook-skill-creator`](../../playbook-skill-creator/SKILL.md)** & Script kiểm toán toán học **[`validate_skill_structure.py`](../../playbook-skill-creator/scripts/validate_skill_structure.py)**.
-> 2. **[`GURU.md`](../../../GURU.md)** (6 Guru Nội bộ) & **[`e:\02_CHANNEL\lifestyle-vlog\Du-an-lifestyle-vlog\GURU.md`](file:///e:/02_CHANNEL/lifestyle-vlog/Du-an-lifestyle-vlog/GURU.md)** (9 Guru Thực chiến & Kiến trúc Dây chuyền `gd1` $\rightarrow$ `gd5`).
-> 3. **[`GIẢI PHẪU TOÀN BỘ CÁC LOẠI CẤU TRÚC & FILE TRONG KHO.md`](../../../00_KHO_SKILLS_VA_CONG_CU_QUOC_TE/GIẢI%20PHẪU%20TOÀN%20BỘ%20CÁC%20LOẠI%20CẤU%20TRÚC%20&%20FILE%20TRONG%20KHO.md)** & **[`01_PHAN_TICH_CAU_TRUC_SKILL_DOI_THU_QUOC_TE.md`](../../../00_KHO_SKILLS_VA_CONG_CU_QUOC_TE/01_PHAN_TICH_CAU_TRUC_SKILL_DOI_THU_QUOC_TE.md)**.
+> 1. **[`playbook-skill-creator`](../../.agent/skills/playbook-skill-creator/SKILL.md)** & Script kiểm toán toán học **[`validate_skill_structure.py`](../../.agent/skills/playbook-skill-creator/scripts/validate_skill_structure.py)**.
+> 2. **``GURU.md``** (6 Guru Nội bộ) & **``GURU.md``** (9 Guru Thực chiến & Kiến trúc Dây chuyền `gd1` $\rightarrow$ `gd5`).
+> 3. **``GIẢI PHẪU TOÀN BỘ CÁC LOẠI CẤU TRÚC & FILE TRONG KHO.md``** & **``01_PHAN_TICH_CAU_TRUC_SKILL_DOI_THU_QUOC_TE.md``**.
 
 ---
 
@@ -18,14 +18,14 @@ Khi chạy trực tiếp `python playbook-skill-creator/scripts/validate_skill_s
 | **2** | **File `references/` mồ côi & Thiếu Lệnh đọc phẫu thuật** | ❌ **[FAIL] 6/8 Lỗi** | Trong `SKILL.md` không hề có lệnh trỏ đọc sang 3 file `references/` theo tọa độ dòng (`StartLine -> EndLine`). Khi chạy, AI bỏ qua hoàn toàn thư mục `references/`. |
 | **3** | **Thiếu hoàn toàn thư mục `templates/` (Pure Output Schema)** | ❌ **[FAIL] Kiến trúc** | Không có khuôn mẫu JSON/Markdown chuẩn cho `Bảng Chỉ đạo Phân cảnh`, `Danh mục Nguyên liệu cần sinh` hay `Biên bản Kiểm duyệt`. |
 | **4** | **Bản chất Code hiện tại là "Đóng đinh cho 1 đoạn Demo 94 giây" (`Hardcoded Demo`)** | ❌ **LỖI BẢN CHẤT NGHIÊM TRỌNG NHẤT** | Trong `SKILL.md` và `scripts/`, các cảnh như `KIM_AND_SONS_STOREFRONT`, `RADIO_ROOM_STAGE`, `WHALES_AND_SHRIMP_SEQUENCE` đang bị **viết cứng (`hardcode`) cho riêng bài Bắc Triều Tiên**! Nếu ngày mai bạn đưa vào `Kịch bản + Voice` về **Đế chế Mông Cổ** hay **Chiến tranh Việt Nam**, skill hiện tại **KHÔNG THỂ CHẠY ĐƯỢC** vì nó không có quy trình phân tích kịch bản mới và sinh nguyên liệu mới! |
-| **5** | **Gom cả một dây chuyền phức tạp vào 1 Skill duy nhất** | ❌ **SAI KIẾN TRÚC DÂY CHUYỀN** | Giống như bạn đã nhận ra ở [`e:\02_CHANNEL\lifestyle-vlog`](file:///e:/02_CHANNEL/lifestyle-vlog): từ lúc nhận `Kịch bản + Voice` (dài 15–35 phút) đến lúc ra video hoàn chỉnh phải qua **nhiều giai đoạn bản chất khác nhau** (Bóc tách âm thanh $\rightarrow$ Đạo diễn chuyển ngữ kịch bản sang phân cảnh $\rightarrow$ Tìm/Vẽ/Tách nền/Lắp khớp nguyên liệu 2D $\rightarrow$ Dựng & Kiểm duyệt). Nhồi tất cả vào 1 skill 51 dòng là **bất khả thi**. |
+| **5** | **Gom cả một dây chuyền phức tạp vào 1 Skill duy nhất** | ❌ **SAI KIẾN TRÚC DÂY CHUYỀN** | Giống như bạn đã nhận ra ở ``lifestyle-vlog``: từ lúc nhận `Kịch bản + Voice` (dài 15–35 phút) đến lúc ra video hoàn chỉnh phải qua **nhiều giai đoạn bản chất khác nhau** (Bóc tách âm thanh $\rightarrow$ Đạo diễn chuyển ngữ kịch bản sang phân cảnh $\rightarrow$ Tìm/Vẽ/Tách nền/Lắp khớp nguyên liệu 2D $\rightarrow$ Dựng & Kiểm duyệt). Nhồi tất cả vào 1 skill 51 dòng là **bất khả thi**. |
 
 ---
 
 ## PHẦN 2: SO SÁNH BẢN CHẤT `LIFESTYLE-VLOG` VS. `2D-ILLUSTRATED-HISTORY` — TẠI SAO PHẢI TÁCH THÀNH DÂY CHUYỀN NHIỀU GIAI ĐOẠN?
 
 Nhận định của bạn **chính xác 100% về mặt Tư duy Hệ thống**:
-Ở [`e:\02_CHANNEL\lifestyle-vlog`](file:///e:/02_CHANNEL/lifestyle-vlog), chúng ta có **GĐ 2 (Chỉ đạo quay) $\rightarrow$ GĐ 3 (Đi quay thực địa lấy nguyên liệu thô) $\rightarrow$ GĐ 4 (Kiểm định nguyên liệu & Chỉ đạo dựng) $\rightarrow$ GĐ 5 (Dựng phim & Kiểm duyệt 3 lớp)**.
+Ở ``lifestyle-vlog``, chúng ta có **GĐ 2 (Chỉ đạo quay) $\rightarrow$ GĐ 3 (Đi quay thực địa lấy nguyên liệu thô) $\rightarrow$ GĐ 4 (Kiểm định nguyên liệu & Chỉ đạo dựng) $\rightarrow$ GĐ 5 (Dựng phim & Kiểm duyệt 3 lớp)**.
 
 Sang **`2D-Illustrated-History`** (khi đầu vào của bạn là **`Kịch bản + Voice`** có sẵn), chúng ta **không cầm máy ảnh đi quay ngoài đời**, nhưng bản chất vật lý của **Giai đoạn "Đi Quay" (GĐ 3)** được thay thế hoàn toàn bằng **Giai đoạn "Săn Tìm, Sinh Ảnh/Video AI, Tách Nền & Đóng Khớp Con Rối 2D (`Asset Forge & Paper-Doll Rigging`)"**!
 
@@ -82,7 +82,7 @@ Thay vì phải ngồi vẽ và kéo thả 350 cảnh mất 40 tiếng đồng h
 
 ## PHẦN 4: KẾ HOẠCH KIẾN TRÚC HOÀN CHỈNH — TỔ CHỨC LẠI `2D-ILLUSTRATED-HISTORY` THÀNH HỆ SINH THÁI 4 GIAI ĐOẠN (CHUẨN CẤP ĐỘ 4 `PLAYBOOK-SKILL-CREATOR`)
 
-Áp dụng đúng cấu trúc Dây chuyền Hợp đồng File trên ổ cứng (`File-System State Contracts`) của [`e:\02_CHANNEL\lifestyle-vlog`](file:///e:/02_CHANNEL/lifestyle-vlog) và tiêu chuẩn **Cấp độ 4 (`Enterprise Hybrid Engine: Scanners -> LLM -> Engines -> Validators`)** của [`playbook-skill-creator`](../../playbook-skill-creator/SKILL.md):
+Áp dụng đúng cấu trúc Dây chuyền Hợp đồng File trên ổ cứng (`File-System State Contracts`) của ``lifestyle-vlog`` và tiêu chuẩn **Cấp độ 4 (`Enterprise Hybrid Engine: Scanners -> LLM -> Engines -> Validators`)** của [`playbook-skill-creator`](../../.agent/skills/playbook-skill-creator/SKILL.md):
 
 ### 4.1. Sơ Đồ Luồng Chạy 4 Giai Đoạn & Các File Hợp Đồng Bàn Giao Trên Ổ Cứng
 
@@ -117,7 +117,7 @@ flowchart TD
 ### 4.2. Cấu Trúc Thư Mục Dự Án & 4 Bộ Skill Chuẩn `validate_skill_structure.py [PASS 100%]`
 
 ```text
-e:\02_CHANNEL\thu-nghiem\edit-video\2D-Illustrated-History\
+2D-Illustrated-History\
 ├── GURU_2D_HISTORY.md                                      ← Hiến pháp 9 Guru + 6 Luật Chuyển Ngữ Kịch bản <-> Hình ảnh
 ├── log-tap-phim.md                                         ← Sổ theo dõi trạng thái từng tập (EP001: GD1_DONE -> GD4_DONE)
 │

@@ -259,10 +259,6 @@ def build_cluster_video(manifest_path: Path, workspace_root: Path = None, force_
     out_cluster_dir.mkdir(parents=True, exist_ok=True)
     final_cluster_mp4 = out_cluster_dir / f"{cluster_id}.mp4"
 
-    prod_cluster_dir = workspace_root / "3_san_xuat_tung_cum" / episode_id / cluster_id
-    prod_cluster_dir.mkdir(parents=True, exist_ok=True)
-    prod_cluster_mp4 = prod_cluster_dir / f"{cluster_id}.mp4"
-
     cmd_concat = [
         FFMPEG_EXE,
         "-y",
@@ -291,12 +287,16 @@ def build_cluster_video(manifest_path: Path, workspace_root: Path = None, force_
     if res.returncode != 0:
         raise RuntimeError(f"FFmpeg cluster concat failed: {res.stderr}")
 
-    shutil.copy2(final_cluster_mp4, prod_cluster_mp4)
     total_elapsed = time.perf_counter() - t_cluster_start
 
     mp4_dur = probe_media_duration(final_cluster_mp4)
     wav_dur = float(audio_report["mixed_duration_sec"])
     av_drift = abs(mp4_dur - wav_dur)
+
+    try:
+        rel_out_mp4 = final_cluster_mp4.relative_to(workspace_root).as_posix()
+    except ValueError:
+        rel_out_mp4 = f"3_output/{episode_id}/1_video_cac_cum/{cluster_id}.mp4"
 
     build_report = {
         "episode_id": episode_id,
@@ -308,9 +308,9 @@ def build_cluster_video(manifest_path: Path, workspace_root: Path = None, force_
         "voice_wav_duration_sec": round(wav_dur, 4),
         "video_mp4_duration_sec": round(mp4_dur, 4),
         "av_sync_drift_sec": round(av_drift, 4),
-        "output_mp4": str(final_cluster_mp4),
+        "output_mp4": rel_out_mp4,
     }
-    (prod_cluster_dir / f"build_report_{cluster_id}.json").write_text(
+    (cluster_dir / f"build_report_{cluster_id}.json").write_text(
         json.dumps(build_report, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
@@ -366,9 +366,8 @@ def main():
     args = parser.parse_args()
 
     if args.concat:
-        ws = Path(args.workspace) if args.workspace else Path(
-            r"e:\02_CHANNEL\thu-nghiem\edit-video\2D-Illustrated-History\Du-an-2D-Illustrated-History\dung-video-lich-su-hoat-hinh-2d"
-        )
+        default_ws = Path(__file__).resolve().parents[4] / "Du-an-2D-Illustrated-History" / "dung-video-lich-su-hoat-hinh-2d"
+        ws = Path(args.workspace) if args.workspace else default_ws
         concat_episode_master(args.manifest_or_episode, ws)
     else:
         build_cluster_video(Path(args.manifest_or_episode), args.workspace, force_rebuild=args.force)

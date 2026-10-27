@@ -36,16 +36,17 @@ except ImportError:
 
 
 def find_project_workspace(start_path: Path) -> Path:
-    """Tìm thư mục gốc của dự án chứa 1_kich_ban, 2_nguyen_lieu, 3_output."""
+    """Tìm thư mục gốc của dự án chứa 1_input, 2_nguyen_lieu, 3_output."""
+    rel_ws = Path(__file__).resolve().parents[4] / "Du-an-2D-Illustrated-History" / "dung-video-lich-su-hoat-hinh-2d"
     candidates = [
         start_path,
-        Path(r"e:\02_CHANNEL\thu-nghiem\edit-video\2D-Illustrated-History\Du-an-2D-Illustrated-History\dung-video-lich-su-hoat-hinh-2d"),
-        start_path.parent.parent.parent.parent / "Du-an-2D-Illustrated-History" / "dung-video-lich-su-hoat-hinh-2d",
+        rel_ws,
+        start_path / "Du-an-2D-Illustrated-History" / "dung-video-lich-su-hoat-hinh-2d",
     ]
     for c in candidates:
         if (c / "2_nguyen_lieu").exists() and (c / "3_output").exists():
             return c.resolve()
-    return candidates[1]
+    return rel_ws.resolve()
 
 
 def probe_video_info(video_path: Path) -> Dict[str, Any]:

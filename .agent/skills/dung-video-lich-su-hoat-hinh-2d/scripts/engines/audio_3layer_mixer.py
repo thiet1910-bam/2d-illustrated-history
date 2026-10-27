@@ -313,9 +313,14 @@ def mix_cluster_audio(manifest_path: Path, out_wav_path: Path = None):
     expected_dur = float(manifest.get("total_duration_sec", mixed_dur_sec))
     drift_sec = abs(mixed_dur_sec - expected_dur)
 
+    try:
+        rel_mixed_wav = out_wav_path.relative_to(workspace_root).as_posix()
+    except ValueError:
+        rel_mixed_wav = out_wav_path.name
+
     report = {
         "cluster_id": cluster_id,
-        "mixed_wav_path": str(out_wav_path),
+        "mixed_wav_path": rel_mixed_wav,
         "sample_rate": SR,
         "total_samples": int(total_samples),
         "expected_duration_sec": round(expected_dur, 6),

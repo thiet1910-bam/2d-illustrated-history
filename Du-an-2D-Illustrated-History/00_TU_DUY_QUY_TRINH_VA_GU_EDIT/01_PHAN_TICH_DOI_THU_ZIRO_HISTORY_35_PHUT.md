@@ -1,6 +1,6 @@
 # BÁO CÁO GIẢI PHẪU CHI TIẾT VIDEO ĐỐI THỦ `ZIRO HISTORY` (`ZNYnU2NQ5w4` — 35 PHÚT 28 GIÂY)
 
-> **Phương pháp kiểm chứng (Tuân thủ Cơ chế Đọc Video Kép trong [`GURU.md`](../../GURU.md)):**
+> **Phương pháp kiểm chứng (Tuân thủ Cơ chế Đọc Video Kép trong ``GURU.md``):**
 > - **[👁️ Đã kiểm tra bằng mắt trên luồng Video `.MP4` liên tục]:** Đã cắt và nạp trực tiếp 4 luồng video `.mp4` (`clip_01_intro_00_30s.mp4`, `clip_02_intro_30_65s.mp4`, `clip_03_myth_tiger_bear_120_150s.mp4`, `clip_04_korean_war_map_940_970s.mp4`) vào `read_file` (`video/mp4`) để xem chuyển động từng giây (`00:00 -> 00:01 -> 00:02...`) kèm âm thanh như khán giả thật.
 > - **[📊 Đã xác minh bằng số liệu (`FFmpeg scdet` & `yt-dlp`)]:** Đã đo tự động mật độ cắt cảnh, cấu trúc 13 chương và tốc độ xuất hiện hiệu ứng.
 

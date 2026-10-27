@@ -1,6 +1,6 @@
 {
   "cluster_id": "cum_02_Hoi_II_seg_2_1_2_2",
-  "mixed_wav_path": "E:\\02_CHANNEL\\thu-nghiem\\edit-video\\2D-Illustrated-History\\Du-an-2D-Illustrated-History\\dung-video-lich-su-hoat-hinh-2d\\2_nguyen_lieu\\EP01_Iran\\cac_cum\\cum_02_Hoi_II_seg_2_1_2_2\\mixed_audio_cum_02_Hoi_II_seg_2_1_2_2.wav",
+  "mixed_wav_path": "2_nguyen_lieu/EP01_Iran/cac_cum/cum_02_Hoi_II_seg_2_1_2_2/mixed_audio_cum_02_Hoi_II_seg_2_1_2_2.wav",
   "sample_rate": 44100,
   "total_samples": 4741270,
   "expected_duration_sec": 107.511792,

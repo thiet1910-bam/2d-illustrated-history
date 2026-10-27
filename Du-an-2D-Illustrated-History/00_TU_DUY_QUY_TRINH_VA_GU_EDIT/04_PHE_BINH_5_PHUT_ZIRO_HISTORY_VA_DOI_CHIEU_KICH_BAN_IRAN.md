@@ -2,8 +2,8 @@
 
 > **Trạng thái xác minh:** `[📊 Đã xác minh 100% bằng Lớp 1 (Xem trực tiếp 7 luồng video .mp4 liên tục kèm âm thanh từ 00:00 đến 05:05 qua read_file) & Lớp 2 (Đo đạc FFmpeg scdet + silencedetect trên toàn bộ 305 giây)]`
 > **Video đối thủ:** *The Entire History of North Korea in 35 minutes* — Kênh **Ziro History** (`https://www.youtube.com/watch?v=ZNYnU2NQ5w4`)
-> **Kịch bản đối chiếu của bạn:** `c:\Users\Admin\Downloads\kịch bản (1).txt` (*Toàn bộ Lịch sử Iran trong 35 phút* — 7 Hồi, 4 Skit đối thoại châm biếm)
-> **Hệ quy chiếu phản biện:** 9 Guru hàng đầu thế giới (`e:\02_CHANNEL\lifestyle-vlog\Du-an-lifestyle-vlog\GURU.md` & `e:\02_CHANNEL\thu-nghiem\edit-video\GURU.md`)
+> **Kịch bản đối chiếu của bạn:** `1_input/EP01_Iran/kich_ban_chia_hoi.txt` (*Toàn bộ Lịch sử Iran trong 35 phút* — 7 Hồi, 4 Skit đối thoại châm biếm)
+> **Hệ quy chiếu phản biện:** 9 Guru hàng đầu thế giới (`GURU.md` & `GURU.md`)
 
 ---
 
@@ -132,7 +132,7 @@ Hãy quan sát thật kỹ cách Ziro History dựng cảnh Skit hài hước d�
 
 ## PHẦN 4: ĐỐI CHIẾU PHẪU THUẬT `5 PHÚT ZIRO HISTORY` $\leftrightarrow$ `KỊCH BẢN IRAN (KỊCH BẢN (1).TXT)` CỦA BẠN
 
-Kịch bản `c:\Users\Admin\Downloads\kịch bản (1).txt` của bạn viết về **Lịch sử Iran trong 35 phút (7 Hồi, 4 Skit)** có cấu trúc **tương đồng 98% với Ziro History**, và thậm chí có những chất liệu kịch tính hơn! Hãy xem bảng ánh xạ trực tiếp từ những gì chúng ta vừa xem trong 5 phút của `Ziro History` sang chính các dòng kịch bản của bạn:
+Kịch bản `1_input/EP01_Iran/kich_ban_chia_hoi.txt` của bạn viết về **Lịch sử Iran trong 35 phút (7 Hồi, 4 Skit)** có cấu trúc **tương đồng 98% với Ziro History**, và thậm chí có những chất liệu kịch tính hơn! Hãy xem bảng ánh xạ trực tiếp từ những gì chúng ta vừa xem trong 5 phút của `Ziro History` sang chính các dòng kịch bản của bạn:
 
 | Phân cảnh trong `Ziro History` (`00:00 -> 05:05`) đã xem | Phân cảnh tương ứng trong `kịch bản (1).txt` (Lịch sử Iran) của bạn | Cơ chế Tự động hóa trong Bộ Skill 4 Giai đoạn (`2D-Illustrated-History`) |
 | :--- | :--- | :--- |
