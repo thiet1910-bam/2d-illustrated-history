@@ -1,0 +1,18 @@
+{
+  "name": "ziro-history-studio-v3",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-Contained HTML5 Canvas + Vector + Long-Form Audio Clustering Studio for 2D Illustrated History",
+  "scripts": {
+    "preflight": "python engine/preflight.py",
+    "scan": "python engine/scan_clusters.py",
+    "mix": "python engine/mix_audio.py",
+    "render": "node engine/render.js",
+    "qa": "python engine/build_qa_sheet.py",
+    "concat": "python engine/concat_master.py"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}

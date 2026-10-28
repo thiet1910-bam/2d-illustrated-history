@@ -1,28 +1,10 @@
-# Video thành phẩm & file âm thanh dung lượng lớn (> 10MB - 100MB)
-*.mp4
-*.MP4
-*.mov
-*.MOV
-*.wav
-*.WAV
-*.mp3
-*.MP3
-*.m4a
-*.M4A
-*.zip
-*.ZIP
-
-# Ngoại lệ: Giữ lại bộ 8 file SFX gốc của Ziro History (~50-95KB/file) trong Kho tự chủ của Skill
-!**/ziro_authentic_sfx/*.wav
-!**/ziro_authentic_sfx/*.WAV
-
-# Thư mục lưu trữ nháp Prototype lịch sử & bộ nhớ đệm Beat MP4 / Frame trung gian
-Du-an-2D-Illustrated-History/99_LUU_TRU_PROTOTYPE/
-**/cache_beats/
-**/_frames_*/
-
-# Hệ thống & Cache Python
+# Disposable intermediate cache, local machine config & local dependencies
+.cache/
+.mvd/
+node_modules/
 __pycache__/
 *.pyc
+*.pyo
+*.tmp
 .DS_Store
 Thumbs.db

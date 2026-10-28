@@ -1,0 +1,14 @@
+{
+  "episode_id": "EP_EXAMPLE",
+  "cluster_id": "cum_01_Hoi_I",
+  "bgm": "bgm_tense_history.wav",
+  "bgm_duck_db": -20.5,
+  "bgm_pause_db": -13.5,
+  "qa_peaks": [7.20, 16.80],
+  "cues": [
+    { "t": 0.18, "sfx": "whoosh_smooth.wav", "gain_db": -10.5, "max_dur": 1.2, "pan": -0.25, "note": "Beat 01: Opening transition" },
+    { "t": 1.40, "sfx": "card_pop.wav", "gain_db": -11.0, "max_dur": 0.8, "pan": 0.20, "note": "Beat 01: Visual prop pops in" },
+    { "t": 8.60, "sfx": "whoosh_low.wav", "gain_db": -9.0, "max_dur": 1.6, "pan": 0.00, "note": "Beat 02: Geopolitical map zoom" },
+    { "t": 10.20, "sfx": "click_cinematic.wav", "gain_db": -10.5, "max_dur": 0.8, "pan": 0.00, "note": "Beat 02: Capital radar lock" }
+  ]
+}
